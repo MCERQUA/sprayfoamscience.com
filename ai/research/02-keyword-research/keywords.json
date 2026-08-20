@@ -1,0 +1,53 @@
+{
+  "source": "DataForSEO keywords_data/google_ads/search_volume/live + dataforseo_labs/keyword_ideas/live + serp/google/organic PAA pulls, US, 2026-08-20",
+  "finding": "Deep-chemistry exact-match terms (spray foam off ratio, spray foam chemistry, spray foam fire code, spray foam thermal drift, spray foam offgassing, closed cell spray foam problems) return NULL/zero volume — same pattern as prior CCA builds where jargon-precise terms have no direct search demand. Real, meaningful volume clusters on: (1) open-cell vs closed-cell comparison, (2) R-value/thermal performance, (3) safety/VOC concerns, (4) cost, (5) fiberglass comparison, and — the standout finding from live PAA data — (6) a large, current 'spray foam has a bad reputation' concern cluster (red flag, hard to sell house, insurance companies don't like it, people removing it, mold behind it). That reputation-risk cluster is NOT what a generic explainer site would lead with, but it is what real searchers are actually asking about right now, and it's the most defensible/differentiated angle for an authoritative science-education site backed by a former-contractor organization.",
+  "primary": [
+    {"keyword": "closed cell spray foam", "volume": 14800, "cpc": 3.59, "competition": "HIGH"},
+    {"keyword": "open cell spray foam", "volume": 8100, "cpc": 2.26, "competition": "HIGH"},
+    {"keyword": "spray foam insulation cost", "volume": 6600, "cpc": 5.99, "competition": "MEDIUM"},
+    {"keyword": "open cell vs closed cell spray foam", "volume": 2400, "cpc": 4.37, "competition": "LOW"},
+    {"keyword": "spray foam insulation pros and cons", "volume": 590, "cpc": 2.07, "competition": "LOW"},
+    {"keyword": "spray foam r value", "volume": 880, "cpc": 3.73, "competition": "MEDIUM"},
+    {"keyword": "is spray foam insulation safe", "volume": 880, "cpc": 3.00, "competition": "LOW"},
+    {"keyword": "spray foam vs fiberglass", "volume": 390, "cpc": 2.53, "competition": "LOW"}
+  ],
+  "secondary": [
+    {"keyword": "spray foam insulation r value per inch", "volume": 480, "cpc": 2.72, "competition": "LOW"},
+    {"keyword": "spray foam shrinkage", "volume": 210, "cpc": null, "competition": "LOW"},
+    {"keyword": "spray foam mold", "volume": 170, "cpc": 0.93, "competition": "HIGH"},
+    {"keyword": "spray foam insulation problems", "volume": 320, "cpc": 0.01, "competition": "LOW"},
+    {"keyword": "spray foam insulation removal", "volume": 320, "cpc": 11.55, "competition": "LOW"},
+    {"keyword": "spray foam smell", "volume": 70, "cpc": null, "competition": "LOW"},
+    {"keyword": "spray foam problems", "volume": 50, "cpc": 4.76, "competition": "LOW"},
+    {"keyword": "spray foam insulation lawsuit", "volume": 50, "cpc": null, "competition": "LOW"},
+    {"keyword": "spray foam voc", "volume": 20, "cpc": null, "competition": "LOW"},
+    {"keyword": "spray foam health effects", "volume": 30, "cpc": null, "competition": "LOW"},
+    {"keyword": "spray foam curing time", "volume": 140, "cpc": null, "competition": "LOW"},
+    {"keyword": "spray foam moisture barrier", "volume": 140, "cpc": 7.20, "competition": "HIGH"},
+    {"keyword": "spray foam vapor barrier", "volume": 140, "cpc": 7.20, "competition": "HIGH"},
+    {"keyword": "icynene vs demilec", "volume": 10, "cpc": null, "competition": null},
+    {"keyword": "diy spray foam insulation kit", "volume": 9900, "cpc": 1.77, "competition": null},
+    {"keyword": "diy spray foam insulation", "volume": 6600, "cpc": 1.48, "competition": null},
+    {"keyword": "spray foam insulation kit", "volume": 22200, "cpc": 2.45, "competition": null}
+  ],
+  "reputation_risk_cluster_from_live_PAA_2026-08-20": {
+    "note": "Real People Also Ask questions pulled live from three head-term SERPs (open cell vs closed cell spray foam / is spray foam insulation safe / spray foam insulation pros and cons). Exact-match volume for many of these long-tail phrasings is null (too specific to register at keyword-tool level) but the PAA appearance itself proves active searcher demand within the parent SERPs, which DO have real volume.",
+    "questions_observed": [
+      "What are the downsides of closed cell spray foam?",
+      "Can mold grow on open cell foam?",
+      "How do I tell if I have open cell or closed cell spray foam?",
+      "What are the downsides of using open cell foam insulation?",
+      "Do mice chew through closed cell spray foam?",
+      "Why is spray foam insulation now a red flag?",
+      "What is the downside of spray foam insulation?",
+      "Why is it hard to sell a house with spray foam insulation?",
+      "Why are people removing spray foam?",
+      "Is it safe to be in house after spray foam?",
+      "Can mold grow behind spray foam insulation?",
+      "What are the negatives to spray foam insulation?",
+      "Why do insurance companies not like spray foam insulation?"
+    ]
+  },
+  "note_on_anomalous_result": "The exact-match query 'spray foam insurance' returned volume=90500, identical to the broad 'spray foam insulation' figure — almost certainly a keyword-matching/rounding artifact in the tool, not a genuine distinct search term. NOT used as a headline claim anywhere in the site; flagged here so it isn't mistaken for real signal downstream.",
+  "broader_market_context": "keyword_ideas around the 'spray foam insulation' seed surfaced a much larger general insulation-shopping market (insulation 135k/mo, attic insulation 74k/mo, fiberglass insulation 74k/mo, etc.) — confirms category size but these are product-comparison-shopping terms, not science/education intent, so they were NOT used as primary pillar targets. The DIY-kit cluster (spray foam insulation kit 22.2k, diy spray foam insulation kit 9.9k, diy spray foam insulation 6.6k) IS relevant — it directly supports a 'why DIY kits can't replicate professional off-ratio-controlled application' content angle that funnels to the certified-installer network."
+}
