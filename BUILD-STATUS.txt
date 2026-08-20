@@ -35,13 +35,19 @@ ROUTES: 25 static routes generated (next build output, confirmed via `pnpm run b
   - /privacy, /terms
   - /sitemap.xml, /robots.txt, /_not-found
 
-WORD COUNT: topic-content.ts + all blog posts = ~8,400 words of real technical content (accurate
-building science — polyurethane chemistry, R-value/LTTR, vapor-permeance classes, IRC/IBC thermal-
-and ignition-barrier requirements, ASTM E84/NFPA 286 — no fabricated statistics or invented
-citations). Individual pillar pages run roughly 1,000-1,400 words each (intro + 4 sections + key
-takeaways + FAQs); blog posts run roughly 500-650 words each. Slightly under the research brief's
-1,400-2,000/700-1,000 targets on the low end of several entries — flagged here rather than silently
-shipped short; content is dense/accurate throughout, not padded filler.
+WORD COUNT (real counts, verified via `wc -w` at report time, not estimated): topic-content.ts data
+file totals ~5,900 words across 7 pillar topics (~845 words average of body prose in the content
+object alone; rendered pages add page-chrome text — headings, sidebar, breadcrumbs — on top).
+Blog posts, individually verified: case-for-professional-application 567,
+spray-foam-cost-per-board-foot 659, spray-foam-vs-fiberglass-r-value 634,
+what-happens-when-spray-foam-mixed-off-ratio 540, why-insurance-underwriters-flag-spray-foam 519
+(the two lowest were expanded during this report's QA pass — cost and fiberglass-comparison posts
+each gained a genuine new section, not filler). All content is accurate building science —
+polyurethane chemistry, R-value ranges, vapor-permeance classes, IRC/IBC thermal- and
+ignition-barrier requirements — no fabricated statistics or invented citations. Pillar/blog word
+counts run somewhat under the research brief's 1,400-2,000/700-1,000 targets on the low end of
+several entries — flagged honestly rather than silently shipped short or over-claimed; content is
+dense and accurate throughout, not padded.
 
 HOMEPAGE: 9 sections — Hero(full-bleed application photo, scrim >=50% opacity, trust bar) +
 TopicsGrid + WhyThisMatters + ProcessSteps + Stats(inverted dark-clay band) + TrustSignals + FAQ +
@@ -73,9 +79,12 @@ both forms and in public/__forms.html decoy. netlify.toml has both webhook notif
 framing, the form is intentionally NOT the page's primary visual weight anywhere — educational CTAs
 ("Read the science") lead, the installer-match form is secondary/soft throughout.
 
-GATE RESULT: pre-deploy-content-check.sh PASS (exit 0) — 18 own-keyword hits, no banned hues, no
-decaying scrim, 6 stitch screens across 10 routes (script counts all .stitch-pages files incl. the
-2 reference-only extras).
+GATE RESULT: pre-deploy-content-check.sh PASS (exit 0) as of this report. First run FAILED
+(scrim-decays-to-40% in .stitch-pages/home.html — a static reference file's card overlay gradient,
+`from-white/90 to-white/40`, not the live shipped Hero.tsx which was already correctly `/50` at
+minimum) — corrected to `/60` and re-run clean. 18 own-keyword hits, no banned hues, no decaying
+scrim, 6 stitch screens across 10 routes (script counts all .stitch-pages files incl. 2
+reference-only extras from a second independent Stitch generation pass — see design-system.md).
 
 BUILD: pnpm build GREEN, static export (output:'export'), next pinned 15.3.9, react/react-dom
 19.2.0, pnpm-lock.yaml only (package-lock.json gitignored), pnpm-workspace.yaml correct from the
@@ -94,8 +103,16 @@ create MCERQUA/sprayfoamscience.com on GitHub or push. All work is committed to 
 local git repo (NOT the shared /workspace/Websites/.git) under josh-desk-2@mesh — needs host
 hand-off for repo creation + push, then Netlify hookup.
 
-PROCESS NOTE: scoped the Stitch fork's prompt this time to explicitly forbid touching scaffold/
-config files (package.json, next.config.ts, tailwind.config.ts, globals.css, layout.tsx, fonts.ts,
-Navbar.tsx) after the prior build's collision — it stayed in scope. The research fork independently
-edited src/lib/site.ts (topics array) and src/lib/fonts.ts directly to match its final research
-findings; both changes were verified correct and consistent with ai/research/ before this report.
+PROCESS NOTE: this build hit a more serious version of the prior batch's fork-scope-drift issue —
+an async Agent dispatch for image generation appears to have resulted in a second, fully-independent
+execution thread that built out nearly the entire site in parallel (all page routes, section
+components, forms, blog content, a full Stitch pass, netlify.toml, pnpm-lock.yaml) while this
+thread was separately doing its own research, its own Stitch pass, and its own image generation —
+both under the same josh-desk-2@mesh identity, both auto-committing to the same repo. Net effect
+was mostly complementary (very little was actually lost), but one real collision occurred:
+concurrent writes to globals.css/design-system.md, resolved by keeping the other thread's already
+in place, live palette as the source of truth and updating design-system.md to document both real
+Stitch runs accurately rather than picking one narrative arbitrarily. Full inventory, build,
+placeholder sweep, gate check (incl. the scrim fix above), and this status file were independently
+re-verified by this thread before reporting done — nothing here is taken on faith from the other
+thread's own claims.
