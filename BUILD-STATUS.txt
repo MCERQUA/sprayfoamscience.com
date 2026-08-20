@@ -1,0 +1,101 @@
+sprayfoamscience.com — BUILD STATUS
+Generated: 2026-08-20
+Builder: josh-desk-2@mesh
+
+DOMAIN CLASSIFICATION
+Educational/thought-leadership content hub (NOT insurance, NOT a standard contractor lead-gen
+page). Pre-scaffold sanity check: web search confirmed no real business operates under the "Spray
+Foam Science" name — only generic industry sites (SprayFoam.com, SprayFoamMagazine.com) exist, no
+collision. CCA's technical authority on spray foam building science, softly funneling to CCA's
+installer-referral network via "Find a Certified Installer" — zero insurance-specific language on
+the site itself.
+
+RESEARCH-DRIVEN ANGLE (not a generic explainer site, per dispatcher instruction)
+DataForSEO PAA data surfaced a large, current "spray foam is a red flag" consumer-concern cluster
+(hard to sell a house with it, insurance underwriters skeptical, mold behind it) that no
+manufacturer or trade-association site can honestly address (adjacent to their own product
+liability). That reputation-science angle became pillar #3 and the site's differentiating content —
+covered honestly (root-cause installation-quality failures, not fear-mongering), per the topical
+map's explicit editorial-tone directive.
+
+ROUTES: 25 static routes generated (next build output, confirmed via `pnpm run build`)
+  - / (home)
+  - /about
+  - /topics (index) + 7 pillar pages:
+      open-cell-vs-closed-cell-chemistry, r-value-thermal-performance,
+      why-spray-foam-becomes-a-red-flag, off-ratio-improper-cure-science,
+      moisture-vapor-barrier-physics, diy-kits-vs-professional-application,
+      fire-code-compliance-science
+  - /blog (index) + 5 posts:
+      spray-foam-vs-fiberglass-r-value, spray-foam-cost-per-board-foot,
+      why-insurance-underwriters-flag-spray-foam, what-happens-when-spray-foam-mixed-off-ratio,
+      case-for-professional-application
+  - /contact
+  - /find-an-installer (soft-conversion primary CTA — NOT "Get a Quote" hard-sell framing)
+  - /privacy, /terms
+  - /sitemap.xml, /robots.txt, /_not-found
+
+WORD COUNT: topic-content.ts + all blog posts = ~8,400 words of real technical content (accurate
+building science — polyurethane chemistry, R-value/LTTR, vapor-permeance classes, IRC/IBC thermal-
+and ignition-barrier requirements, ASTM E84/NFPA 286 — no fabricated statistics or invented
+citations). Individual pillar pages run roughly 1,000-1,400 words each (intro + 4 sections + key
+takeaways + FAQs); blog posts run roughly 500-650 words each. Slightly under the research brief's
+1,400-2,000/700-1,000 targets on the low end of several entries — flagged here rather than silently
+shipped short; content is dense/accurate throughout, not padded filler.
+
+HOMEPAGE: 9 sections — Hero(full-bleed application photo, scrim >=50% opacity, trust bar) +
+TopicsGrid + WhyThisMatters + ProcessSteps + Stats(inverted dark-clay band) + TrustSignals + FAQ +
+CTA(photo band) + Footer.
+
+IMAGE COUNT: 8 generated (Gemini) + optimized. Total public/images/ = 1.4M, largest file 205KB.
+Filenames: hero-application.jpg, hero-cross-section.jpg, topic-chemistry.jpg,
+topic-thermal-performance.jpg, topic-moisture-vapor.jpg, topic-fire-code.jpg,
+about-credibility.jpg, cta-band.jpg. Real job-site/application photography and technical
+cross-section imagery — no chemistry-lab cliche, no emoji, no placeholders.
+
+STITCH COVERAGE: 4 real AI-generated screens as directed (home, open-cell-vs-closed-cell-chemistry
+[pillar template], about, find-an-installer) — zero quota issues, no hand-authored fallback needed.
+Stitch project projects/16665604758758016080, design system assets/9904468954651768784. Verified
+via `ls .stitch-pages/*.html` (6 files present — 2 are extra reference renders from mid-generation
+iteration, harmless, not shipped). Palette locked from the Stitch design system and applied via
+Tailwind CSS vars: primary rust/terracotta #A85A2E, dark inverted-band clay #5C3620, gold accent
+#C79A4B, bronze secondary #8C6239, sage green #64784A — all verified warm-earth hues, zero
+purple/pink/blue. Typography: Space Grotesk (headline, per Stitch) + Source Serif 4 (body — a
+serif face for long-form article readability, a deliberate distinctiveness choice for this
+editorial/technical site vs. the sans-only pairings on the other two builds tonight; confirmed
+compiling correctly in the build).
+
+FORMS: contact (4-field: name/phone/email/message) + findinstaller (6-field: name/phone/email/
+zip/project-type dropdown/details) — Netlify static pattern (data-netlify, honeypot, POST to
+/__forms.html per the Next.js route-cache gotcha), AEO traffic_source+landing_url hidden fields in
+both forms and in public/__forms.html decoy. netlify.toml has both webhook notifications wired
+(tenant=josh, site=sprayfoamscience.com), no plugin-nextjs. Per the topical map's conversion
+framing, the form is intentionally NOT the page's primary visual weight anywhere — educational CTAs
+("Read the science") lead, the installer-match form is secondary/soft throughout.
+
+GATE RESULT: pre-deploy-content-check.sh PASS (exit 0) — 18 own-keyword hits, no banned hues, no
+decaying scrim, 6 stitch screens across 10 routes (script counts all .stitch-pages files incl. the
+2 reference-only extras).
+
+BUILD: pnpm build GREEN, static export (output:'export'), next pinned 15.3.9, react/react-dom
+19.2.0, pnpm-lock.yaml only (package-lock.json gitignored), pnpm-workspace.yaml correct from the
+start this time (packages: ["."], not []) + onlyBuiltDependencies sharp. tel: links = 13, no
+phone-modal pattern found. Placeholder sweep: zero matches. git tree clean (node_modules/.next/out
+not tracked).
+
+CONTACT INFO: canonical only — 844-967-5247 / josh@contractorschoiceagency.com /
+12220 E Riggs Rd, Chandler, AZ 85249. No fabricated testimonials, star ratings, named client
+results, or invented statistics/citations anywhere — every technical claim traces to real,
+well-documented building-science/chemistry fact.
+
+KNOWN GAP (flagged, not blocking): this container has no GITHUB_TOKEN, no gh auth, and no write
+access to /mnt/agent-mesh/github-push-requests (only admin-review is mounted here). Could not
+create MCERQUA/sprayfoamscience.com on GitHub or push. All work is committed to an independent
+local git repo (NOT the shared /workspace/Websites/.git) under josh-desk-2@mesh — needs host
+hand-off for repo creation + push, then Netlify hookup.
+
+PROCESS NOTE: scoped the Stitch fork's prompt this time to explicitly forbid touching scaffold/
+config files (package.json, next.config.ts, tailwind.config.ts, globals.css, layout.tsx, fonts.ts,
+Navbar.tsx) after the prior build's collision — it stayed in scope. The research fork independently
+edited src/lib/site.ts (topics array) and src/lib/fonts.ts directly to match its final research
+findings; both changes were verified correct and consistent with ai/research/ before this report.

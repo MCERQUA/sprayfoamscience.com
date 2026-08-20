@@ -20,6 +20,25 @@ Fiberglass batt performance is unusually sensitive to installation quality. A ba
 
 None of this means fiberglass is obsolete. It costs meaningfully less per square foot, it's easier to remove or modify later (relevant for a home likely to see future renovation), and in a well-air-sealed assembly with a separate vapor-control strategy, correctly installed fiberglass can perform close to its rated value. For budget-constrained projects or additions where future access to wiring and plumbing matters, fiberglass remains a reasonable, defensible choice.
 
+## Closed-Cell Changes the Comparison Entirely
+
+Everything above compares fiberglass to open-cell foam, which is the more common apples-to-apples
+matchup on R-value per inch. Closed-cell spray foam is a different comparison altogether: at
+roughly R-6 to R-7 per inch, it delivers close to double fiberglass's rated performance in the same
+cavity depth, plus the air-sealing and (at sufficient thickness) vapor-control properties fiberglass
+doesn't have at all. That's why closed-cell is the default choice in tight cavities — like a 2x4
+rim joist or a low-slope roof deck — where there isn't room to hit code-minimum R-value with
+fiberglass regardless of installation quality.
+
+## What Climate Zone Changes About the Decision
+
+In colder climate zones, where code-minimum R-values climb and air-sealing failures show up as
+visible ice damming or frozen pipes, the real-world gap between fiberglass and spray foam widens —
+poor air-sealing is a bigger, more visible problem the colder the climate gets. In milder climate
+zones, where the code-minimum bar is lower and air-sealing failures are less dramatic, the cost
+premium for spray foam has to be weighed more carefully against a fiberglass-plus-separate-air-
+sealing approach, which can close a meaningful part of the performance gap at a lower total cost.
+
 ## The Honest Comparison
 
 The fair comparison isn't R-value per inch — it's total assembly performance, including air sealing, moisture management, and installation-quality risk. Spray foam generally wins that comparison for whole-house performance and long-term reliability; fiberglass wins on upfront cost and future accessibility. Neither claim holds up if you only look at the R-value number on the bag or the spec sheet.
