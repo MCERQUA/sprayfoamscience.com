@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import { Send, CheckCircle, Phone, Mail, MapPin } from "lucide-react";
+import { Send, CheckCircle, Mail, MapPin } from "lucide-react";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { site } from "@/lib/site";
 
@@ -60,12 +60,7 @@ export function ContactForm() {
             <CheckCircle className="w-16 h-16 text-primary mx-auto mb-6" />
             <h2 className="text-3xl font-heading font-bold">Thank You!</h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              We&apos;ve received your message and will get back to you within one business day. For
-              anything urgent, call us at{" "}
-              <a href={`tel:${site.phoneDigits}`} className="text-primary font-semibold">
-                {site.phone}
-              </a>
-              .
+              We&apos;ve received your message and will get back to you within one business day.
             </p>
           </FadeIn>
         </div>
@@ -90,17 +85,6 @@ export function ContactForm() {
             </p>
 
             <div className="mt-8 space-y-4">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <Phone className="w-5 h-5 text-primary" />
-                </div>
-                <div>
-                  <p className="text-sm font-medium">Phone</p>
-                  <a href={`tel:${site.phoneDigits}`} className="text-sm text-muted-foreground hover:text-primary">
-                    {site.phone}
-                  </a>
-                </div>
-              </div>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                   <Mail className="w-5 h-5 text-primary" />

@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import Link from "next/link";
 import { site, topics } from "@/lib/site";
 
@@ -29,10 +29,6 @@ export function Footer() {
               and code compliance, explained accurately. Backed by Contractors Choice Agency.
             </p>
             <div className="mt-6 space-y-3">
-              <a href={`tel:${site.phoneDigits}`} className="flex items-center gap-2 text-sm text-ink-foreground/80 hover:text-white transition-colors">
-                <Phone className="w-4 h-4 text-accent" />
-                {site.phone}
-              </a>
               <a href={`mailto:${site.email}`} className="flex items-center gap-2 text-sm text-ink-foreground/80 hover:text-white transition-colors">
                 <Mail className="w-4 h-4 text-accent" />
                 {site.email}

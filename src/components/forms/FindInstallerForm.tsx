@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import { Send, CheckCircle, Phone } from "lucide-react";
+import { Send, CheckCircle } from "lucide-react";
 import { FadeIn } from "@/components/animations/FadeIn";
 import { site } from "@/lib/site";
 
@@ -67,11 +67,7 @@ export function FindInstallerForm() {
             <h2 className="text-3xl font-heading font-bold">Request Received</h2>
             <p className="mt-4 text-lg text-muted-foreground">
               We&apos;ll match you with a certified installer from CCA&apos;s network and follow up
-              within one business day. Need to talk sooner? Call{" "}
-              <a href={`tel:${site.phoneDigits}`} className="text-primary font-semibold">
-                {site.phone}
-              </a>
-              .
+              within one business day.
             </p>
           </FadeIn>
         </div>
@@ -148,14 +144,6 @@ export function FindInstallerForm() {
       >
         {isSubmitting ? "Submitting..." : (<>Get Matched With an Installer <Send className="w-4 h-4" /></>)}
       </button>
-
-      <p className="text-center text-sm text-muted-foreground">
-        Prefer to talk? Call{" "}
-        <a href={`tel:${site.phoneDigits}`} className="inline-flex items-center gap-1 text-primary font-semibold">
-          <Phone className="w-3.5 h-3.5" />
-          {site.phone}
-        </a>
-      </p>
     </form>
   );
 }

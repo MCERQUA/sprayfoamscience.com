@@ -3,8 +3,6 @@ export const site = {
   tagline: "The Building Science Behind Spray Foam Insulation",
   domain: "sprayfoamscience.com",
   url: "https://www.sprayfoamscience.com",
-  phone: "844-967-5247",
-  phoneDigits: "+18449675247",
   email: "josh@contractorschoiceagency.com",
   address: {
     street: "12220 E Riggs Rd",

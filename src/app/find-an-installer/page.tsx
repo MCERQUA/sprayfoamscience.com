@@ -51,11 +51,6 @@ export default function FindAnInstallerPage() {
                   </li>
                 ))}
               </ol>
-              <p className="mt-8 text-sm text-muted-foreground">
-                Prefer to skip the form? Call{" "}
-                <a href={`tel:${site.phoneDigits}`} className="text-primary font-semibold">{site.phone}</a>{" "}
-                directly.
-              </p>
             </FadeIn>
           </div>
           <div className="lg:col-span-3">

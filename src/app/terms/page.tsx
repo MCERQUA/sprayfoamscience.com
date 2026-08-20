@@ -30,7 +30,7 @@ export default function TermsPage() {
               network.
             </p>
             <h2>Contact</h2>
-            <p>Questions about these terms can be directed to {site.email} or {site.phone}.</p>
+            <p>Questions about these terms can be directed to {site.email}.</p>
           </div>
         </div>
       </section>

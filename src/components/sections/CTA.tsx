@@ -4,7 +4,6 @@ import { FadeIn } from "@/components/animations/FadeIn";
 import { MagneticHover } from "@/components/animations/MagneticHover";
 import Link from "next/link";
 import Image from "next/image";
-import { site } from "@/lib/site";
 
 interface CTAProps {
   title?: string;
@@ -42,10 +41,6 @@ export function CTA({
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
             </MagneticHover>
-
-            <a href={`tel:${site.phoneDigits}`} className="text-white/90 hover:text-white transition-colors font-medium cursor-pointer">
-              Or call {site.phone}
-            </a>
           </div>
         </FadeIn>
       </div>

@@ -31,7 +31,7 @@ export default function PrivacyPage() {
               information to third parties.
             </p>
             <h2>Contact</h2>
-            <p>Questions about this policy can be directed to {site.email} or {site.phone}.</p>
+            <p>Questions about this policy can be directed to {site.email}.</p>
           </div>
         </div>
       </section>
