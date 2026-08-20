@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Spray Foam Science | Technical Building Science Education</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Work+Sans:wght@400;500;600&amp;family=Public+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#A85A2E',
+                        dark: '#5C3620',
+                        accent: '#C79A4B',
+                        secondary: '#8C6239',
+                        sage: '#64784A',
+                        base: '#FAF7F1',
+                        tinted: '#EFE4D4',
+                        body: '#2E2419'
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.75rem",
+                        "none": "0",
+                        "sm": "0.125rem",
+                        "md": "0.375rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk", "sans-serif"],
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Work Sans", "sans-serif"],
+                        "label": ["Public Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #FAF7F1;
+            color: #2E2419;
+            font-family: 'Work Sans', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .scrim-50 {
+            background: rgba(46, 36, 25, 0.5);
+        }
+        .scrim-70 {
+            background: rgba(46, 36, 25, 0.7);
+        }
+    </style>
+</head>
+<body class="antialiased">
+<!-- TopNavBar Component -->
+<nav class="bg-[#FAF7F1] dark:bg-[#2E2419] flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto docked full-width top-0 border-b border-[#EFE4D4] dark:border-[#5C3620] flat no shadows z-50 sticky">
+<div class="font-headline text-2xl font-bold text-[#5C3620] dark:text-[#FAF7F1]">
+            Spray Foam Science
+        </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-headline text-lg uppercase tracking-wide text-[#5C3620] dark:text-[#EFE4D4] hover:text-[#A85A2E] transition-colors hover:bg-[#EFE4D4] dark:hover:bg-[#5C3620] px-3 py-2 rounded-xl" href="#">Education</a>
+<a class="font-headline text-lg uppercase tracking-wide text-[#5C3620] dark:text-[#EFE4D4] hover:text-[#A85A2E] transition-colors hover:bg-[#EFE4D4] dark:hover:bg-[#5C3620] px-3 py-2 rounded-xl" href="#">Technical Articles</a>
+<a class="font-headline text-lg uppercase tracking-wide text-[#5C3620] dark:text-[#EFE4D4] hover:text-[#A85A2E] transition-colors hover:bg-[#EFE4D4] dark:hover:bg-[#5C3620] px-3 py-2 rounded-xl" href="#">FAQ</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#A85A2E] dark:text-[#C79A4B] cursor-pointer">search</span>
+<button class="bg-[#A85A2E] text-[#FAF7F1] px-6 py-2 rounded-xl font-headline font-bold uppercase tracking-wide hover:bg-[#8C6239] transition-colors">
+                Find an Installer
+            </button>
+</div>
+</nav>
+<!-- 1) Hero Section -->
+<header class="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center">
+<div class="absolute inset-0 z-0">
+<img alt="" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcUQ20AVYzNIqlC7dILnYqUCaT5DCI4l1Nh8ydUOIK2BKPR_mPu0VF-93dU5zqx542HOSFpNoYtpurYHHfEqclSBtZdAlK33j4iWkcdNVtRF06bq__XY76FwdwurC6FP3YsvD264PTF7gOh3gELeVJs9wQD2p3zwOpKp1vPcpDmwnWZChahqY28XdDJUWK_1KZhpQb0gpc6SDICtLaHoqmiNloL6pwraa22qdDAib9ezbkr3RX4BcE_2i4pRibzXDMHOE4CxCCwIA8"/>
+<div class="absolute inset-0 scrim-50"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
+<h1 class="text-5xl md:text-6xl font-bold text-[#FAF7F1] mb-6 leading-tight">The Technical Authority on Spray Foam Science</h1>
+<p class="text-xl md:text-2xl text-[#EFE4D4] mb-10 font-body max-w-3xl mx-auto">Deep-dive building science education on chemistry, thermal performance, and code compliance.</p>
+<button class="bg-[#C79A4B] text-[#2E2419] px-8 py-4 rounded-xl font-headline font-bold text-lg uppercase tracking-wide hover:bg-[#FAF7F1] transition-all transform hover:scale-105 shadow-lg">
+                Find a Certified Installer
+            </button>
+</div>
+</header>
+<!-- 2) Credibility Strip -->
+<section class="bg-[#EFE4D4] py-8 border-b border-white/20">
+<div class="max-w-screen-2xl mx-auto px-6">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-[#5C3620] text-3xl">verified</span>
+<span class="font-headline font-semibold text-[#2E2419]">Backed by Contractors Choice Agency</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-[#5C3620] text-3xl">engineering</span>
+<span class="font-headline font-semibold text-[#2E2419]">20+ Years Contractor Experience</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-[#5C3620] text-3xl">library_books</span>
+<span class="font-headline font-semibold text-[#2E2419]">Independent Technical Reference</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-[#5C3620] text-3xl">gavel</span>
+<span class="font-headline font-semibold text-[#2E2419]">Not Manufacturer Marketing</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 3) Topic Pillar Grid -->
+<section class="py-24 bg-[#FAF7F1]">
+<div class="max-w-screen-2xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-[#5C3620] mb-4">Core Educational Pillars</h2>
+<div class="w-24 h-1 bg-[#A85A2E] mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-white rounded-xl p-8 shadow-sm border border-[#EFE4D4] hover:shadow-md transition-shadow">
+<div class="w-16 h-16 bg-[#EFE4D4] rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[#A85A2E] text-3xl">science</span>
+</div>
+<h3 class="text-xl font-bold text-[#2E2419] mb-3">Open Cell vs Closed Cell Chemistry</h3>
+<p class="text-[#5C3620] font-body leading-relaxed">Understand the molecular structures, expansion rates, and distinct applications for varied climate zones.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-white rounded-xl p-8 shadow-sm border border-[#EFE4D4] hover:shadow-md transition-shadow">
+<div class="w-16 h-16 bg-[#EFE4D4] rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[#A85A2E] text-3xl">thermostat</span>
+</div>
+<h3 class="text-xl font-bold text-[#2E2419] mb-3">R Value and Thermal Performance</h3>
+<p class="text-[#5C3620] font-body leading-relaxed">Deep dive into thermal resistance, aged R-values, and real-world thermal bridging mitigation.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-white rounded-xl p-8 shadow-sm border border-[#EFE4D4] hover:shadow-md transition-shadow">
+<div class="w-16 h-16 bg-[#EFE4D4] rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[#A85A2E] text-3xl">warning</span>
+</div>
+<h3 class="text-xl font-bold text-[#2E2419] mb-3">Off Ratio and Curing Issues</h3>
+<p class="text-[#5C3620] font-body leading-relaxed">Identify and troubleshoot chemical proportioning errors, exothermic reactions, and shrinkage.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-white rounded-xl p-8 shadow-sm border border-[#EFE4D4] hover:shadow-md transition-shadow">
+<div class="w-16 h-16 bg-[#EFE4D4] rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[#A85A2E] text-3xl">water_drop</span>
+</div>
+<h3 class="text-xl font-bold text-[#2E2419] mb-3">Moisture and Vapor Barrier Physics</h3>
+<p class="text-[#5C3620] font-body leading-relaxed">Analyze permeance ratings, condensation control, and managing moisture drives in wall assemblies.</p>
+</div>
+<!-- Card 5 -->
+<div class="bg-white rounded-xl p-8 shadow-sm border border-[#EFE4D4] hover:shadow-md transition-shadow">
+<div class="w-16 h-16 bg-[#EFE4D4] rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[#A85A2E] text-3xl">local_fire_department</span>
+</div>
+<h3 class="text-xl font-bold text-[#2E2419] mb-3">Fire and Code Compliance Science</h3>
+<p class="text-[#5C3620] font-body leading-relaxed">Navigate ignition barriers, thermal barriers, and rigorous testing standards for IRC/IBC compliance.</p>
+</div>
+<!-- Card 6 -->
+<div class="bg-white rounded-xl p-8 shadow-sm border border-[#EFE4D4] hover:shadow-md transition-shadow">
+<div class="w-16 h-16 bg-[#EFE4D4] rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[#A85A2E] text-3xl">health_and_safety</span>
+</div>
+<h3 class="text-xl font-bold text-[#2E2419] mb-3">Health and Safety During Installation</h3>
+<p class="text-[#5C3620] font-body leading-relaxed">Protocols for ventilation, PPE requirements, and managing volatile organic compounds (VOCs) during application.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4) Why This Matters -->
+<section class="py-24 bg-[#EFE4D4]">
+<div class="max-w-screen-2xl mx-auto px-6">
+<div class="mb-16">
+<h2 class="text-4xl font-bold text-[#5C3620] mb-4">Why Technical Accuracy Matters</h2>
+<div class="w-24 h-1 bg-[#A85A2E]"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div>
+<h4 class="text-2xl font-bold text-[#2E2419] mb-4 border-l-4 border-[#A85A2E] pl-4">Structural Integrity</h4>
+<p class="text-[#5C3620] font-body leading-relaxed">Improperly applied foam can lead to moisture trapping and wood rot. Understanding the physics of vapor permeance is critical for specifying the right product for specific climate zones and assemblies.</p>
+</div>
+<div>
+<h4 class="text-2xl font-bold text-[#2E2419] mb-4 border-l-4 border-[#8C6239] pl-4">Liability Mitigation</h4>
+<p class="text-[#5C3620] font-body leading-relaxed">Failing to adhere to strict code requirements regarding thermal and ignition barriers exposes builders to immense liability. Technical fluency ensures compliance and safe occupancy.</p>
+</div>
+<div>
+<h4 class="text-2xl font-bold text-[#2E2419] mb-4 border-l-4 border-[#64784A] pl-4">Performance Assurance</h4>
+<p class="text-[#5C3620] font-body leading-relaxed">Marketing claims often obscure real-world thermal performance. Relying on objective building science data allows for accurate energy modeling and guaranteed HVAC sizing.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5) Featured Technical Articles -->
+<section class="py-24 bg-[#FAF7F1]">
+<div class="max-w-screen-2xl mx-auto px-6">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="text-4xl font-bold text-[#5C3620] mb-4">Latest Technical Research</h2>
+<div class="w-24 h-1 bg-[#A85A2E]"></div>
+</div>
+<a class="hidden md:flex items-center gap-2 text-[#A85A2E] font-headline font-bold uppercase tracking-wide hover:text-[#8C6239]" href="#">
+                    View All Articles <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Article 1 -->
+<div class="bg-white rounded-xl overflow-hidden shadow-sm border border-[#EFE4D4] hover:shadow-lg transition-all group">
+<div class="h-48 bg-[#EFE4D4] relative overflow-hidden">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Close up cross section macro photography of closed cell spray foam insulation showing rigid cell structure in a lab setting, clinical lighting, highly detailed." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCH0glESXXygI2SnzN0rzrF-OSGYsJM6mEJrtOh-XLihQewlqq4ogTi1bIpXuyc7V32OpvZPFGTASqcSCXxHIihzsEXlTGBhbKJffwyXbLXdbAH7D91KIQlrgThOIsK35s508RsV2zuP6NbjMl6u3SCxx4PXuiiQlX3EyVB03HPwDOv_rZ5Xy4M8ycLvisEIXCkrpkdIUg51S1QZ4ZH3bvTAK-_QjTEFsG4fCfCP6oUc_dq0NOmSGPDFCClZkzYrwhPkAXm-7S1-uXC')"></div>
+<div class="absolute top-4 left-4 bg-[#5C3620] text-[#FAF7F1] text-xs font-label font-bold uppercase px-3 py-1 rounded-full tracking-wider">Technical</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-[#2E2419] mb-3 group-hover:text-[#A85A2E] transition-colors">Analyzing Aged R-Values in Closed Cell Polyurethane</h3>
+<div class="flex items-center gap-2 text-sm text-[#8C6239] font-label font-medium mt-6 border-t border-[#EFE4D4] pt-4">
+<span class="material-symbols-outlined text-lg">schedule</span> 8 min read
+                        </div>
+</div>
+</div>
+<!-- Article 2 -->
+<div class="bg-white rounded-xl overflow-hidden shadow-sm border border-[#EFE4D4] hover:shadow-lg transition-all group">
+<div class="h-48 bg-[#EFE4D4] relative overflow-hidden">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Technical illustration style diagram of a residential wall assembly showing spray foam application, vapor barrier placement, and stud framing, clear technical drawing style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD5uGlNn7AMOPsDDh1U49kGLl0kZVVYinXYT7V_E1SZ2nBa1jAApSafwZYXPSSKlsfjcqpMU0I0ogBB7RUu1GgyRh-lnXzANa-XTNcYXH1-AdVmtmgQ4Lx4jNs6xVy2lYKdWXbaWrGymAv0qa8rBKk4iJEikRrpxrG1FFgM3JVhZLMBPFCsPKkztpyqZ4BZj2GhhN36mCEfh9WI9CTiylZnNrGHPcGdHt_1zSBLOcUIRsG4y4BdL6IescXMDsEJhYVGdfgqp8XUPHr1')"></div>
+<div class="absolute top-4 left-4 bg-[#5C3620] text-[#FAF7F1] text-xs font-label font-bold uppercase px-3 py-1 rounded-full tracking-wider">Technical</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-[#2E2419] mb-3 group-hover:text-[#A85A2E] transition-colors">Vapor Permeance Profiles for Mixed-Humid Climates</h3>
+<div class="flex items-center gap-2 text-sm text-[#8C6239] font-label font-medium mt-6 border-t border-[#EFE4D4] pt-4">
+<span class="material-symbols-outlined text-lg">schedule</span> 12 min read
+                        </div>
+</div>
+</div>
+<!-- Article 3 -->
+<div class="bg-white rounded-xl overflow-hidden shadow-sm border border-[#EFE4D4] hover:shadow-lg transition-all group">
+<div class="h-48 bg-[#EFE4D4] relative overflow-hidden">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Industrial infrared thermography scan of a building envelope showing heat loss and thermal bridging, technical analysis view, bright contrasting colors." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDarI6lGgembDlGd7aeOx76vRMPUazOUFOGA2omVQKZzvmm9G1QSIdk2BBgIt33MWLnHHUK_Nm_nUAr7uFqvJpyWm8prScgY8rnNWMweAmeUolLP9lioQm71GDlSqGAkU-7sD5UDUj3mhIHi65oWlCHMCIBRDCPNsE5e-qruqVL9GP_vuBOqdMcPdDuiiFfWL7QJA8LieDulU_HyrQ11XMHO_5p7rRjWi_H_odinDBaY_7pU8s_g7_xM-Knuc-s8evuc_7FcjW1URAa')"></div>
+<div class="absolute top-4 left-4 bg-[#5C3620] text-[#FAF7F1] text-xs font-label font-bold uppercase px-3 py-1 rounded-full tracking-wider">Technical</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-[#2E2419] mb-3 group-hover:text-[#A85A2E] transition-colors">Identifying Thermal Bridging Failures via Thermography</h3>
+<div class="flex items-center gap-2 text-sm text-[#8C6239] font-label font-medium mt-6 border-t border-[#EFE4D4] pt-4">
+<span class="material-symbols-outlined text-lg">schedule</span> 6 min read
+                        </div>
+</div>
+</div>
+</div>
+<div class="mt-8 text-center md:hidden">
+<a class="inline-flex items-center gap-2 text-[#A85A2E] font-headline font-bold uppercase tracking-wide" href="#">
+                    View All Articles <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 6) Editorial Independence Band -->
+<section class="bg-[#5C3620] py-16 text-[#FAF7F1]">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<span class="material-symbols-outlined text-[#C79A4B] text-4xl mb-4">balance</span>
+<h3 class="text-2xl font-bold mb-4 font-headline">Editorial Independence Statement</h3>
+<p class="font-body text-lg text-[#EFE4D4] leading-relaxed">
+                Spray Foam Science operates as an independent technical resource backed by Contractors Choice Agency. We accept no funding or editorial direction from chemical manufacturers. Our curriculum is strictly based on objective building science, ICC code documentation, and verified field data.
+            </p>
+</div>
+</section>
+<!-- 7) FAQ -->
+<section class="py-24 bg-[#FAF7F1]">
+<div class="max-w-3xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-[#5C3620] mb-4">Technical FAQ</h2>
+<div class="w-24 h-1 bg-[#A85A2E] mx-auto"></div>
+</div>
+<div class="space-y-4">
+<!-- FAQ 1 -->
+<div class="bg-white border border-[#EFE4D4] rounded-xl overflow-hidden">
+<button class="w-full px-6 py-4 text-left font-headline font-bold text-lg text-[#2E2419] flex justify-between items-center hover:bg-[#EFE4D4] transition-colors focus:outline-none">
+                        What constitutes a thermal barrier per IBC regulations?
+                        <span class="material-symbols-outlined text-[#A85A2E]">expand_more</span>
+</button>
+<!-- Content hidden by default in a real implementation, shown for design -->
+<div class="px-6 pb-4 pt-2 text-[#5C3620] font-body bg-white border-t border-[#EFE4D4]">
+                        Per IBC 2603.4, spray polyurethane foam must be separated from the interior of the building by an approved thermal barrier of 1/2-inch gypsum wallboard or a material that is tested in accordance with and meets the acceptance criteria of both the Temperature Transmission Fire Test and the Integrity Fire Test of NFPA 275.
+                    </div>
+</div>
+<!-- FAQ 2 -->
+<div class="bg-white border border-[#EFE4D4] rounded-xl overflow-hidden">
+<button class="w-full px-6 py-4 text-left font-headline font-bold text-lg text-[#2E2419] flex justify-between items-center hover:bg-[#EFE4D4] transition-colors focus:outline-none">
+                        How does open cell foam differ in moisture management?
+                        <span class="material-symbols-outlined text-[#A85A2E]">expand_more</span>
+</button>
+</div>
+<!-- FAQ 3 -->
+<div class="bg-white border border-[#EFE4D4] rounded-xl overflow-hidden">
+<button class="w-full px-6 py-4 text-left font-headline font-bold text-lg text-[#2E2419] flex justify-between items-center hover:bg-[#EFE4D4] transition-colors focus:outline-none">
+                        What causes exothermic failure during installation?
+                        <span class="material-symbols-outlined text-[#A85A2E]">expand_more</span>
+</button>
+</div>
+<!-- FAQ 4 -->
+<div class="bg-white border border-[#EFE4D4] rounded-xl overflow-hidden">
+<button class="w-full px-6 py-4 text-left font-headline font-bold text-lg text-[#2E2419] flex justify-between items-center hover:bg-[#EFE4D4] transition-colors focus:outline-none">
+                        Are intumescent coatings required in attic applications?
+                        <span class="material-symbols-outlined text-[#A85A2E]">expand_more</span>
+</button>
+</div>
+<!-- FAQ 5 -->
+<div class="bg-white border border-[#EFE4D4] rounded-xl overflow-hidden">
+<button class="w-full px-6 py-4 text-left font-headline font-bold text-lg text-[#2E2419] flex justify-between items-center hover:bg-[#EFE4D4] transition-colors focus:outline-none">
+                        How is aged R-value calculated for closed cell products?
+                        <span class="material-symbols-outlined text-[#A85A2E]">expand_more</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- 8) Final CTA -->
+<section class="relative w-full py-32 flex items-center justify-center">
+<div class="absolute inset-0 z-0">
+<img alt="" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4mgNsrh1rc-qc1DwLzd0tB1fP_eJkF7XiaHvyjfVkt9PaO1GTBMjhWnCbboD_saXPRVZ6qCuVKGkuDQuzPkpqwrdB2IsjlVHVhN_LXmIb0eTkgbWWG8N-m4pSFJ30PPFa8Kbd-fG3riyZq2s_5cZ2O5nxQS3AuSiIanSS7u62-mmaXzuxnsaqedV2YjnKsPs9HDzMXo4PDJM5iDCAsAZcbNbKHhdFOH59YfLHxllHXfZvBeS7KKKc2xgRrXErBovOqNnwpoJz309A"/>
+<div class="absolute inset-0 scrim-70"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-3xl mx-auto">
+<h2 class="text-4xl md:text-5xl font-bold text-[#FAF7F1] mb-6">Find a Certified &amp; Insured Installer</h2>
+<p class="text-xl text-[#EFE4D4] mb-10 font-body">Leverage the Contractors Choice Agency network to find technical professionals verified for safety, compliance, and proper insurance coverage.</p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+<button class="bg-[#A85A2E] text-[#FAF7F1] px-10 py-4 rounded-xl font-headline font-bold text-lg uppercase tracking-wide hover:bg-[#8C6239] transition-all w-full sm:w-auto shadow-lg">
+                    Find Installer
+                </button>
+<div class="flex items-center gap-3 text-[#C79A4B] font-headline font-bold text-2xl bg-white/10 px-8 py-3 rounded-xl backdrop-blur-sm border border-white/20">
+<span class="material-symbols-outlined text-3xl">phone_in_talk</span>
+                    1-800-SPRAY-FOAM
+                </div>
+</div>
+</div>
+</section>
+<!-- Footer Component -->
+<footer class="bg-[#5C3620] dark:bg-[#2E2419] grid grid-cols-1 md:grid-cols-3 gap-8 w-full px-12 py-16 full-width bottom-0 flat no shadows z-40">
+<div class="flex flex-col gap-4">
+<div class="font-headline text-xl font-bold text-[#FAF7F1]">Spray Foam Science</div>
+<p class="font-body text-sm text-[#FAF7F1] opacity-80 max-w-xs">
+                Technical building science education focused on insulation chemistry, performance, and code compliance.
+            </p>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-headline font-bold text-[#C79A4B] mb-2 uppercase tracking-wide text-sm">Navigation</h4>
+<a class="font-body text-sm text-[#EFE4D4] opacity-80 hover:opacity-100 hover:text-[#C79A4B] transition-colors" href="#">Education</a>
+<a class="font-body text-sm text-[#EFE4D4] opacity-80 hover:opacity-100 hover:text-[#C79A4B] transition-colors" href="#">Technical Articles</a>
+<a class="font-body text-sm text-[#EFE4D4] opacity-80 hover:opacity-100 hover:text-[#C79A4B] transition-colors" href="#">FAQ</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-headline font-bold text-[#C79A4B] mb-2 uppercase tracking-wide text-sm">Legal</h4>
+<a class="font-body text-sm text-[#EFE4D4] opacity-80 hover:opacity-100 hover:text-[#C79A4B] transition-colors" href="#">Contact Agency</a>
+<a class="font-body text-sm text-[#EFE4D4] opacity-80 hover:opacity-100 hover:text-[#C79A4B] transition-colors" href="#">Privacy Policy</a>
+<a class="font-body text-sm text-[#EFE4D4] opacity-80 hover:opacity-100 hover:text-[#C79A4B] transition-colors" href="#">Terms of Service</a>
+</div>
+<div class="md:col-span-3 border-t border-white/10 pt-8 mt-8 text-center">
+<p class="font-body text-sm text-[#FAF7F1] opacity-60">© 2024 Spray Foam Science by Contractors Choice Agency. Technical Building Science Resource.</p>
+</div>
+</footer>
+</body></html>
