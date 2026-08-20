@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Open-Cell vs Closed-Cell Chemistry - CCA Science Hub</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700;900&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;family=Public+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#A6672E',
+                            light: '#C78B55',
+                            dark: '#8B572A'
+                        },
+                        secondary: {
+                            DEFAULT: '#3E342B',
+                            light: '#5A4C40'
+                        },
+                        accent: {
+                            gold: '#d4af37',
+                            sage: '#8A9A86'
+                        },
+                        surface: {
+                            paper: '#fdfbf7',
+                            sand: '#f5f0e6',
+                            stone: '#e5e1da',
+                            dark: '#1a1612'
+                        },
+                        text: {
+                            main: '#2d2d2d',
+                            muted: '#4a4a4a',
+                            light: '#fdfbf7'
+                        }
+                    },
+                    fontFamily: {
+                        headline: ["Space Grotesk", "sans-serif"],
+                        display: ["Space Grotesk", "sans-serif"],
+                        body: ["Source Serif 4", "serif"],
+                        label: ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                        lg: "1rem",
+                        xl: "1.5rem",
+                        full: "9999px"
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface-paper text-text-main font-body antialiased selection:bg-primary-light selection:text-white">
+<!-- TopNavBar -->
+<nav class="bg-[#fdfbf7] dark:bg-[#1a1a1a] font-headline text-lg font-bold tracking-tight border-b border-[#e5e1da] dark:border-[#333333] sticky top-0 z-50 w-full shadow-sm">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="font-headline text-2xl font-black text-[#A6672E] uppercase tracking-tighter">
+<a href="#">CCA Science Hub</a>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-[#A6672E] border-b-2 border-[#A6672E] pb-1 hover:text-[#8b572a] transition-all duration-200" href="#">Science Pillars</a>
+<a class="text-[#4a4a4a] dark:text-[#cccccc] hover:text-[#A6672E] transition-colors hover:text-[#8b572a] duration-200" href="#">Articles</a>
+<a class="text-[#4a4a4a] dark:text-[#cccccc] hover:text-[#A6672E] transition-colors hover:text-[#8b572a] duration-200" href="#">About CCA</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="text-[#4a4a4a] hover:text-[#A6672E] transition-colors">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<a class="hidden lg:inline-flex items-center justify-center px-5 py-2.5 bg-[#A6672E] text-white font-label text-sm font-semibold rounded hover:bg-[#8b572a] transition-colors shadow-sm" href="#">
+                    Find Installer
+                </a>
+<button class="md:hidden text-[#4a4a4a]">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Hero Band -->
+<header class="bg-surface-sand border-b border-surface-stone py-12 px-6">
+<div class="max-w-7xl mx-auto">
+<nav aria-label="Breadcrumb" class="flex text-sm font-label text-text-muted mb-6">
+<ol class="inline-flex items-center space-x-1 md:space-x-3">
+<li class="inline-flex items-center">
+<a class="inline-flex items-center hover:text-primary transition-colors" href="#">Home</a>
+</li>
+<li>
+<div class="flex items-center">
+<span class="material-symbols-outlined text-sm mx-1" data-icon="chevron_right">chevron_right</span>
+<a class="ml-1 hover:text-primary transition-colors md:ml-2" href="#">Science Pillars</a>
+</div>
+</li>
+<li aria-current="page">
+<div class="flex items-center">
+<span class="material-symbols-outlined text-sm mx-1" data-icon="chevron_right">chevron_right</span>
+<span class="ml-1 text-primary font-medium md:ml-2">Chemistry</span>
+</div>
+</li>
+</ol>
+</nav>
+<h1 class="font-headline text-4xl md:text-5xl font-black text-secondary tracking-tight mb-4">Open-Cell vs Closed-Cell Chemistry</h1>
+<p class="font-body text-xl text-text-muted max-w-3xl leading-relaxed">
+                A technical analysis of polyurethane foam structures, blowing agents, and the resulting thermal, moisture, and structural performance characteristics of light-density versus medium-density insulation systems.
+            </p>
+</div>
+</header>
+<!-- Main Content Container -->
+<div class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left Column: Article Body -->
+<main class="lg:col-span-8 space-y-12">
+<section class="prose prose-lg prose-stone max-w-none font-body text-text-main leading-relaxed">
+<p class="text-xl mb-8">
+                    Understanding the fundamental chemistry of spray polyurethane foam (SPF) is critical for specifying the correct insulation system in a building envelope. The distinction between open-cell (half-pound) and closed-cell (two-pound) foams lies primarily in their cellular structure and the expanding agents used during the exothermic chemical reaction.
+                </p>
+<h2 class="font-headline text-3xl font-bold text-secondary mt-12 mb-6">Polymer Structure and Cellular Mechanics</h2>
+<p class="mb-6">
+                    In <strong>open-cell foam</strong>, the cells are intentionally left open, meaning the bubbles that form during the chemical reaction do not fully close. This results in a softer, more flexible material that allows air and moisture vapor to pass through more easily. The expansion rate is significantly higher, often yielding a density of roughly 0.5 pounds per cubic foot. Water is typically used as the primary blowing agent, reacting with the isocyanate to produce carbon dioxide gas which expands the foam.
+                </p>
+<p class="mb-6">
+                    Conversely, <strong>closed-cell foam</strong> comprises cells that are completely closed and densely packed together. These cells are filled with a specialized blowing agent (historically HFCs, now transitioning to hydrofluoroolefins or HFOs with ultra-low global warming potential). This rigid structure significantly increases the material's density—typically around 2.0 pounds per cubic foot—enhancing its structural strength, thermal resistance (R-value), and resistance to water vapor transmission.
+                </p>
+<!-- Technical Image Insert -->
+<figure class="my-10 border border-surface-stone p-2 rounded bg-white shadow-sm">
+<img class="w-full h-auto object-cover rounded aspect-video" data-alt="A professional technician in full white PPE suit and respirator mask applying spray polyurethane foam insulation to an interior residential wood stud wall. The scene is illuminated by warm, bright halogen work lights on a yellow stand, casting a golden glow over the expanding foam. Fine particulate mist is visible in the air near the spray gun. The aesthetic is documentary, technical, and focuses on the physical application process with high detail and realistic construction site textures." src="https://lh3.googleusercontent.com/aida/AP1WRLt0cstD6F77y0rlp2HHKLBUt9bj-A0rjPd3kwRW129HgZkXiy_VyF0GfZFUiTmKOjynmff6rB5tM6Z-Mg1KXgLsAr1P8uyehdBzOV-aSrc2eYVGAd45AmTBwWkpiCtZhlUTnBBindhsbDHRYh4lBp25h1uIwCr8CzsoaGzaB8JvkkdIu7L8T5ZAaG31L5KBb8RDTAiiXwtq3dPOH1EkU4GFz0fuktV7995L7qmIwOqOm2q-tmk1-oxkERbw"/>
+<figcaption class="font-label text-sm text-text-muted mt-3 text-center">Application of spray polyurethane foam requires precise mixing of 'A' and 'B' side chemicals at specified temperatures.</figcaption>
+</figure>
+<h2 class="font-headline text-3xl font-bold text-secondary mt-12 mb-6">Comparative Performance Metrics</h2>
+<p class="mb-8">
+                    The chemical differences manifest directly in the physical and thermal properties of the installed product. Selecting the appropriate foam type depends entirely on the specific requirements of the building assembly, climate zone, and moisture management strategy.
+                </p>
+<!-- Technical Table -->
+<div class="overflow-x-auto rounded-lg border border-surface-stone shadow-sm mb-12">
+<table class="w-full text-left font-label">
+<thead class="bg-surface-sand text-secondary font-semibold uppercase text-xs tracking-wider border-b border-surface-stone">
+<tr>
+<th class="px-6 py-4">Metric</th>
+<th class="px-6 py-4">Open-Cell (0.5 lb)</th>
+<th class="px-6 py-4">Closed-Cell (2.0 lb)</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-stone bg-white">
+<tr class="hover:bg-surface-sand/50 transition-colors">
+<td class="px-6 py-4 font-medium text-text-main">R-Value per Inch</td>
+<td class="px-6 py-4 text-text-muted">R-3.5 to R-3.8</td>
+<td class="px-6 py-4 text-text-muted">R-6.0 to R-7.0+</td>
+</tr>
+<tr class="hover:bg-surface-sand/50 transition-colors">
+<td class="px-6 py-4 font-medium text-text-main">Density</td>
+<td class="px-6 py-4 text-text-muted">~0.5 lbs/cu.ft.</td>
+<td class="px-6 py-4 text-text-muted">~2.0 lbs/cu.ft.</td>
+</tr>
+<tr class="hover:bg-surface-sand/50 transition-colors">
+<td class="px-6 py-4 font-medium text-text-main">Vapor Permeability</td>
+<td class="px-6 py-4 text-text-muted">Permeable (&gt;10 perms)</td>
+<td class="px-6 py-4 text-text-muted">Semi-Impermeable (&lt;1.0 perm at 2")</td>
+</tr>
+<tr class="hover:bg-surface-sand/50 transition-colors">
+<td class="px-6 py-4 font-medium text-text-main">Expansion Rate</td>
+<td class="px-6 py-4 text-text-muted">100x - 120x liquid volume</td>
+<td class="px-6 py-4 text-text-muted">30x - 40x liquid volume</td>
+</tr>
+<tr class="hover:bg-surface-sand/50 transition-colors">
+<td class="px-6 py-4 font-medium text-text-main">Water Absorption</td>
+<td class="px-6 py-4 text-text-muted">High (sponge-like)</td>
+<td class="px-6 py-4 text-text-muted">Low (rejects bulk water)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 class="font-headline text-3xl font-bold text-secondary mt-12 mb-6">Blowing Agents and Global Warming Potential (GWP)</h2>
+<p>
+                    The evolution of blowing agents in closed-cell foam represents a significant advancement in building science chemistry. Older generations relied on Hydrofluorocarbons (HFCs), which possessed high Global Warming Potential. The industry has largely transitioned to Hydrofluoroolefins (HFOs). HFOs have an atmospheric life measured in days rather than decades, dropping the GWP from over 1,000 to near 1, while simultaneously maintaining or improving the material's thermal resistance and yield.
+                </p>
+</section>
+<!-- FAQ Section -->
+<section class="mt-16 border-t border-surface-stone pt-12">
+<h3 class="font-headline text-2xl font-bold text-secondary mb-8">Technical Addendum: Frequently Asked Questions</h3>
+<div class="space-y-4 font-label">
+<!-- FAQ 1 -->
+<details class="group border border-surface-stone rounded-lg bg-white overflow-hidden shadow-sm open:bg-surface-sand transition-colors">
+<summary class="flex justify-between items-center font-medium cursor-pointer list-none p-5 text-text-main hover:text-primary">
+<span>Can open-cell foam be used below grade?</span>
+<span class="transition group-open:rotate-180">
+<span class="material-symbols-outlined" data-icon="expand_more">expand_more</span>
+</span>
+</summary>
+<div class="text-text-muted p-5 pt-0 leading-relaxed font-body border-t border-surface-stone mt-2">
+                            No. Open-cell foam is highly vapor permeable and acts similar to a sponge when exposed to bulk water. It should never be used in below-grade applications (like basements or crawlspace walls) or in any assembly where it may contact liquid water. Closed-cell foam must be used in these environments.
+                        </div>
+</details>
+<!-- FAQ 2 -->
+<details class="group border border-surface-stone rounded-lg bg-white overflow-hidden shadow-sm open:bg-surface-sand transition-colors">
+<summary class="flex justify-between items-center font-medium cursor-pointer list-none p-5 text-text-main hover:text-primary">
+<span>Does closed-cell foam act as a vapor barrier?</span>
+<span class="transition group-open:rotate-180">
+<span class="material-symbols-outlined" data-icon="expand_more">expand_more</span>
+</span>
+</summary>
+<div class="text-text-muted p-5 pt-0 leading-relaxed font-body border-t border-surface-stone mt-2">
+                            Yes, at sufficient thickness. At approximately 1.5 to 2 inches of thickness, most closed-cell spray polyurethane foams qualify as a Class II vapor retarder (less than 1.0 perm), effectively controlling vapor drive without the need for an additional polyethylene sheet in many climate zones.
+                        </div>
+</details>
+<!-- FAQ 3 -->
+<details class="group border border-surface-stone rounded-lg bg-white overflow-hidden shadow-sm open:bg-surface-sand transition-colors">
+<summary class="flex justify-between items-center font-medium cursor-pointer list-none p-5 text-text-main hover:text-primary">
+<span>Which foam type is better for sound dampening?</span>
+<span class="transition group-open:rotate-180">
+<span class="material-symbols-outlined" data-icon="expand_more">expand_more</span>
+</span>
+</summary>
+<div class="text-text-muted p-5 pt-0 leading-relaxed font-body border-t border-surface-stone mt-2">
+                            Open-cell foam is generally superior for sound attenuation (STC ratings) compared to closed-cell foam. Its softer, porous structure is more effective at absorbing sound waves, particularly mid-range frequencies, making it advantageous for interior partition walls separating living spaces or home theaters.
+                        </div>
+</details>
+</div>
+</section>
+</main>
+<!-- Right Column: Sidebar -->
+<aside class="lg:col-span-4 space-y-8">
+<!-- CTA Card -->
+<div class="bg-white border border-surface-stone rounded-xl p-6 shadow-sm sticky top-24">
+<div class="flex items-center space-x-3 mb-4 text-primary">
+<span class="material-symbols-outlined text-3xl" data-icon="verified_user">verified_user</span>
+<h4 class="font-headline font-bold text-lg text-secondary">Verified Installation</h4>
+</div>
+<p class="font-body text-sm text-text-muted mb-6 leading-relaxed">
+                    Proper chemical reaction requires rigorous temperature control and equipment calibration. Ensure your project is handled by professionals.
+                </p>
+<a class="block w-full text-center px-4 py-3 bg-primary text-white font-label font-semibold rounded hover:bg-primary-dark transition-colors" href="#">
+                    Find a CCA-network insured installer
+                </a>
+</div>
+<!-- Related Pillars List -->
+<div class="bg-surface-sand rounded-xl p-6 border border-surface-stone">
+<h4 class="font-headline font-bold text-lg text-secondary mb-4 uppercase tracking-wider text-sm">Building Science Pillars</h4>
+<ul class="space-y-3 font-label text-sm">
+<li>
+<a class="flex items-center text-text-muted hover:text-primary transition-colors py-1" href="#">
+<span class="material-symbols-outlined text-sm mr-2" data-icon="thermostat">thermostat</span>
+                            R-Value &amp; Thermal
+                        </a>
+</li>
+<li>
+<a class="flex items-center text-text-muted hover:text-primary transition-colors py-1" href="#">
+<span class="material-symbols-outlined text-sm mr-2" data-icon="water_drop">water_drop</span>
+                            Moisture &amp; Vapor
+                        </a>
+</li>
+<li>
+<a class="flex items-center text-text-muted hover:text-primary transition-colors py-1" href="#">
+<span class="material-symbols-outlined text-sm mr-2" data-icon="local_fire_department">local_fire_department</span>
+                            Fire &amp; Code
+                        </a>
+</li>
+<li>
+<a class="flex items-center text-text-muted hover:text-primary transition-colors py-1" href="#">
+<span class="material-symbols-outlined text-sm mr-2" data-icon="warning">warning</span>
+                            Off-Ratio Failures
+                        </a>
+</li>
+<li>
+<a class="flex items-center text-text-muted hover:text-primary transition-colors py-1" href="#">
+<span class="material-symbols-outlined text-sm mr-2" data-icon="construction">construction</span>
+                            DIY vs Pro
+                        </a>
+</li>
+<li>
+<a class="flex items-center text-text-muted hover:text-primary transition-colors py-1" href="#">
+<span class="material-symbols-outlined text-sm mr-2" data-icon="science">science</span>
+                            Application Physics
+                        </a>
+</li>
+</ul>
+</div>
+</aside>
+</div>
+<!-- Editorial Footer Band -->
+<section class="bg-secondary text-white py-16 px-6 mt-12 border-t-4 border-primary">
+<div class="max-w-4xl mx-auto text-center">
+<span class="font-label text-accent-gold uppercase tracking-widest text-sm font-semibold mb-2 block">Next Chapter</span>
+<h2 class="font-headline text-3xl md:text-4xl font-bold mb-6">Moisture &amp; Vapor Physics</h2>
+<p class="font-body text-surface-stone text-lg mb-8 max-w-2xl mx-auto">
+                Explore how the chemical structures discussed here govern bulk water holdout, vapor drive, and condensation control within wall assemblies.
+            </p>
+<a class="inline-flex items-center px-6 py-3 border-2 border-primary text-primary hover:bg-primary hover:text-white font-label font-bold rounded transition-all duration-300 group" href="#">
+                Continue to Moisture &amp; Vapor Physics
+                <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#1a1612] dark:bg-[#0a0908] font-body text-sm leading-relaxed border-t border-[#333]">
+<div class="w-full py-12 px-6 flex flex-col md:flex-row justify-between items-start gap-8 max-w-7xl mx-auto">
+<div class="space-y-4 max-w-sm">
+<div class="font-headline text-xl font-bold text-[#fdfbf7]">
+                    Contractors Choice Agency
+                </div>
+<p class="text-[#a8a29e]">
+                    Building Science Authority. Dedicated to advancing structural performance through rigorous chemistry, applied physics, and verified technical standards.
+                </p>
+<div class="text-[#a8a29e] mt-4">
+                    © 2024 Contractors Choice Agency. Building Science Authority.
+                </div>
+</div>
+<div class="flex flex-col md:flex-row gap-8 md:gap-16 font-label">
+<div class="flex flex-col space-y-3">
+<span class="text-[#d4af37] font-semibold uppercase tracking-wider text-xs">Resources</span>
+<a class="text-[#a8a29e] hover:text-[#fdfbf7] hover:text-[#d4af37] transition-colors focus:ring-1 focus:ring-[#d4af37] outline-none rounded-sm" href="#">Technical Standards</a>
+<a class="text-[#a8a29e] hover:text-[#fdfbf7] hover:text-[#d4af37] transition-colors focus:ring-1 focus:ring-[#d4af37] outline-none rounded-sm" href="#">Moisture Physics</a>
+<a class="text-[#a8a29e] hover:text-[#fdfbf7] hover:text-[#d4af37] transition-colors focus:ring-1 focus:ring-[#d4af37] outline-none rounded-sm" href="#">Code Compliance</a>
+</div>
+<div class="flex flex-col space-y-3">
+<span class="text-[#d4af37] font-semibold uppercase tracking-wider text-xs">Legal &amp; Support</span>
+<a class="text-[#a8a29e] hover:text-[#fdfbf7] hover:text-[#d4af37] transition-colors focus:ring-1 focus:ring-[#d4af37] outline-none rounded-sm" href="#">Privacy Policy</a>
+<a class="text-[#a8a29e] hover:text-[#fdfbf7] hover:text-[#d4af37] transition-colors focus:ring-1 focus:ring-[#d4af37] outline-none rounded-sm" href="#">Contact Support</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

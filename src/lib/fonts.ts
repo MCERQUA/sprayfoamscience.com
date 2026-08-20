@@ -1,13 +1,13 @@
-import { Lexend, Inter } from "next/font/google";
+import { Space_Grotesk, Work_Sans } from "next/font/google";
 
-// Provisional pairing — reconciled against ai/research/design-system.md (Stitch) once generated.
-export const bodyFont = Inter({
+// Font pairing locked by the Stitch design system (ai/research/design-system.md)
+export const bodyFont = Work_Sans({
   subsets: ["latin"],
   variable: "--font-body",
   display: "swap",
 });
 
-export const headingFont = Lexend({
+export const headingFont = Space_Grotesk({
   subsets: ["latin"],
   variable: "--font-heading",
   weight: ["500", "600", "700"],

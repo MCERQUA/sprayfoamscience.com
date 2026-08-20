@@ -3,46 +3,46 @@
 @tailwind utilities;
 
 /* ===== DESIGN TOKENS — Spray Foam Science =====
- * Warm earth-tone palette only (terracotta/rust/clay/copper/bronze/amber/gold + natural greens).
- * Provisional values below — reconciled against ai/research/design-system.md (Stitch) once generated.
+ * Palette locked to the Stitch design system — ai/research/design-system.md
+ * (projects/16665604758758016080, assets/9904468954651768784)
  * Light, bright, editorial/technical-authority tone — light-dominant with dark punctuation bands.
  */
 
 @layer base {
 :root {
   --background: 40 47% 96%;           /* #FAF7F1 warm paper */
-  --foreground: 30 16% 15%;           /* #2C2620 charcoal-brown */
+  --foreground: 31 30% 14%;           /* #2E2419 charcoal */
 
   --card: 0 0% 100%;
-  --card-foreground: 30 16% 15%;
+  --card-foreground: 31 30% 14%;
 
-  --primary: 29 57% 42%;              /* #A6672E amber-bronze */
+  --primary: 22 57% 42%;              /* #A85A2E rust/terracotta */
   --primary-foreground: 0 0% 100%;
 
-  --secondary: 27 54% 31%;            /* #7A4A24 deep bronze */
+  --secondary: 30 42% 39%;            /* #8C6239 bronze */
   --secondary-foreground: 0 0% 100%;
 
-  --accent: 33 57% 51%;               /* #C98A3D warm gold */
-  --accent-foreground: 30 16% 15%;
+  --accent: 38 53% 54%;               /* #C79A4B gold */
+  --accent-foreground: 31 30% 14%;
 
-  --sage: 89 27% 33%;                 /* #5F7548 natural green */
+  --sage: 86 26% 34%;                 /* #64784A natural green */
   --sage-foreground: 0 0% 100%;
 
-  --muted: 38 40% 91%;
-  --muted-foreground: 28 14% 38%;
+  --muted: 36 46% 88%;                /* #EFE4D4 warm sand */
+  --muted-foreground: 31 15% 38%;
 
   --destructive: 0 74% 42%;
   --destructive-foreground: 0 0% 100%;
 
   --border: 34 35% 84%;
   --input: 34 35% 84%;
-  --ring: 29 57% 42%;
+  --ring: 22 57% 42%;
 
   /* Inverted contrast band — dark punctuation band on this light-dominant site */
-  --ink: 30 33% 18%;                  /* #3D2E1F deep bronze-black */
-  --ink-foreground: 38 40% 95%;
+  --ink: 22 48% 24%;                  /* #5C3620 deep clay */
+  --ink-foreground: 40 40% 95%;
 
-  --radius: 0.5rem;
+  --radius: 0.75rem;                  /* ROUND_TWELVE per Stitch design system */
 }
 
 * {
