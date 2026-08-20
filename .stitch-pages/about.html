@@ -1,284 +1,179 @@
 <!DOCTYPE html>
 
-<html lang="en"><head>
+<html class="light" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>About - Spray Foam Science</title>
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600&amp;family=Space+Grotesk:wght@400;600;700&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <!-- Material Symbols -->
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Space Grotesk (Headline), Source Serif 4 (Body), Public Sans (Label) -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&amp;family=Space+Grotesk:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <!-- Tailwind CSS -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<!-- Tailwind Configuration -->
 <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
         theme: {
           extend: {
-            "colors": {},
+            "colors": {
+              "brand": {
+                "primary": "#A6672E",
+                "secondary": "#5C554E",
+                "accent": "#D4A373",
+                "dark": "#1A1816",
+                "light": "#FDFCFB",
+                "sand": "#F5F2ED",
+                "sage": "#8A9A86"
+              }
+            },
             "borderRadius": {
-                    "DEFAULT": "0.5rem",
-                    "lg": "1rem",
-                    "xl": "1.5rem",
-                    "full": "9999px"
+              "DEFAULT": "0.5rem",
+              "lg": "1rem",
+              "xl": "1.5rem",
+              "full": "9999px"
             },
-            "spacing": {},
             "fontFamily": {
-                    "headline": [
-                            "Space Grotesk"
-                    ],
-                    "display": [
-                            "Space Grotesk"
-                    ],
-                    "body": [
-                            "Work Sans"
-                    ],
-                    "label": [
-                            "Public Sans"
-                    ]
-            },
-            "fontSize": {}
+              "headline": ["Space Grotesk", "sans-serif"],
+              "display": ["Space Grotesk", "sans-serif"],
+              "body": ["\"Source Serif 4\"", "serif"],
+              "label": ["Public Sans", "sans-serif"]
+            }
           },
         },
       }
     </script>
 <style>
         .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
     </style>
 </head>
-<body class="bg-[#FAF7F1] text-[#2E2419] font-body antialiased selection:bg-[#A85A2E] selection:text-[#FAF7F1] flex flex-col min-h-screen">
+<body class="font-body text-[#5C554E] bg-[#FDFCFB] antialiased">
 <!-- TopNavBar -->
-<nav class="bg-[#FAF7F1] dark:bg-[#2E2419] w-full top-0 sticky bg-[#FAF7F1] border-b border-[#EFE4D4] dark:border-[#5C3620] flat no shadows z-50 transition-all duration-300 ease-in-out">
-<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-<!-- Brand -->
-<a class="font-headline text-2xl font-bold text-[#A85A2E] dark:text-[#C79A4B]" href="#">
-                Spray Foam Science
-            </a>
-<!-- Links (Web) -->
-<div class="hidden md:flex space-x-8 items-center font-body text-[#2E2419] dark:text-[#FAF7F1]">
-<a class="text-[#A85A2E] font-bold border-b-2 border-[#A85A2E] pb-1" href="#">Education</a>
-<a class="text-[#2E2419] hover:text-[#A85A2E] transition-colors hover:bg-[#EFE4D4] dark:hover:bg-[#5C3620] px-3 py-1 rounded" href="#">Technical Articles</a>
-<a class="text-[#2E2419] hover:text-[#A85A2E] transition-colors hover:bg-[#EFE4D4] dark:hover:bg-[#5C3620] px-3 py-1 rounded" href="#">FAQ</a>
+<nav class="bg-[#FDFCFB] dark:bg-[#1A1816] docked full-width top-0 border-b border-[#E5E1DA] dark:border-[#2D2A26] z-50 sticky">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<a class="font-headline font-black text-2xl text-[#A6672E] dark:text-[#D4A373] tracking-tight" href="#">Spray Foam Science</a>
 </div>
-<!-- Actions -->
-<div class="flex items-center space-x-4">
-<button class="hidden md:flex items-center justify-center bg-[#A85A2E] hover:bg-[#8C6239] text-[#FAF7F1] font-label font-semibold px-6 py-2 rounded transition-colors duration-300">
-                    Technical Guide
+<div class="hidden md:flex items-center gap-8">
+<a class="font-headline font-bold text-lg uppercase tracking-wide text-[#5C554E] dark:text-[#A8A29E] hover:text-[#A6672E] transition-colors duration-200" href="#">Science Pillars</a>
+<a class="font-headline font-bold text-lg uppercase tracking-wide text-[#5C554E] dark:text-[#A8A29E] hover:text-[#A6672E] transition-colors duration-200" href="#">Articles</a>
+<a class="font-headline font-bold text-lg uppercase tracking-wide text-[#A6672E] border-b-2 border-[#A6672E] pb-1 hover:text-[#A6672E] transition-colors duration-200 opacity-80 transition-opacity" href="#">About CCA</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden md:flex items-center gap-2 px-6 py-2 bg-[#A6672E] text-white font-label font-medium rounded hover:bg-[#8A5222] transition-colors">
+                    Find Installer
                 </button>
-<button class="md:hidden text-[#2E2419]">
+<button class="md:hidden text-[#5C554E]">
 <span class="material-symbols-outlined text-3xl">menu</span>
 </button>
 </div>
 </div>
 </nav>
-<main class="flex-grow">
-<!-- Header Section -->
-<section class="bg-[#FAF7F1] py-20 px-8">
-<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-<div class="space-y-8">
-<h1 class="font-headline text-5xl md:text-6xl font-bold text-[#2E2419] leading-tight">
-                        Why Spray Foam <br/><span class="text-[#A85A2E]">Science Exists</span>
-</h1>
-<p class="font-body text-xl text-[#2E2419] leading-relaxed max-w-lg">
-                        Spray Foam Science is Contractors Choice Agency's independent technical resource dedicated to advancing the understanding of building-science chemistry, thermal performance, and code compliance. We bridge the gap between manufacturer claims and real-world application, providing authoritative, objective education for industry professionals.
-                    </p>
-<div class="flex items-center space-x-4 pt-4">
-<div class="h-[2px] w-12 bg-[#C79A4B]"></div>
-<span class="font-label text-sm uppercase tracking-widest text-[#8C6239] font-semibold">Authoritative Technical Resource</span>
+<!-- (1) Hero Band -->
+<header class="relative w-full min-h-[70vh] flex items-center justify-center">
+<!-- Background Image with Scrim -->
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center" data-alt="A detailed wide shot of a technician in full white PPE spraying polyurethane foam insulation onto a wooden stud wall structure. The scene is illuminated by warm, practical work lights casting deep amber and bronze shadows. The atmosphere is industrial and technical, focusing on the real-world application of building science." style="background-image: url('https://lh3.googleusercontent.com/aida/AP1WRLt0cstD6F77y0rlp2HHKLBUt9bj-A0rjPd3kwRW129HgZkXiy_VyF0GfZFUiTmKOjynmff6rB5tM6Z-Mg1KXgLsAr1P8uyehdBzOV-aSrc2eYVGAd45AmTBwWkpiCtZhlUTnBBindhsbDHRYh4lBp25h1uIwCr8CzsoaGzaB8JvkkdIu7L8T5ZAaG31L5KBb8RDTAiiXwtq3dPOH1EkU4GFz0fuktV7995L7qmIwOqOm2q-tmk1-oxkERbw')">
 </div>
+<!-- Scrim to ensure text legibility (must not drop below 50%) -->
+<div class="absolute inset-0 bg-black/65"></div>
 </div>
-<div class="relative">
-<div class="absolute inset-0 bg-[#EFE4D4] rounded-xl transform translate-x-4 translate-y-4"></div>
-<img alt="Real spray foam application" class="relative z-10 w-full h-[500px] object-cover rounded-xl shadow-sm border border-[#EFE4D4]" src="https://lh3.googleusercontent.com/aida/AP1WRLul028X5ZRWseHifKQWCDnbn7MvymXe6RqXryjpYX1l6TwURt6QH0nf8vrcTg8QPR0WDZ_zpG4AcEO8can9A1w_msv-Q9zZjrRkrUwLPtsGoqRz0pyCIlL-dH76qhOdc2KH0HPonsgkhUCdb5Ms0XtrobYWV_g7YqMjT2A1AN6bLJCPej-jY-AXHGT5IuzOBDVXyYVS-dDucDBEiSodQqGmPJOzCkbZ7HxeLFtvL4cMFbnRAdQJGIZP2WE"/>
-<!-- Decorative overlay element -->
-<div class="absolute bottom-8 -left-8 z-20 bg-[#FAF7F1] p-6 rounded-lg shadow-xl border border-[#EFE4D4] max-w-xs hidden md:block">
-<div class="flex items-start space-x-4">
-<span class="material-symbols-outlined text-[#64784A] text-3xl" style="font-variation-settings: 'FILL' 1;">science</span>
-<div>
-<h4 class="font-headline font-bold text-[#2E2419]">Applied Chemistry</h4>
-<p class="text-sm font-body text-[#2E2419] mt-1 opacity-80">Real-world job site application driven by strict scientific protocols.</p>
+<div class="relative z-10 max-w-4xl mx-auto px-6 py-20 text-center">
+<h1 class="font-headline font-black text-5xl md:text-7xl text-white mb-8 leading-tight tracking-tight">
+                A Sovereign Authority in Building Science
+            </h1>
+<p class="font-body text-xl md:text-2xl text-white/90 leading-relaxed max-w-3xl mx-auto">
+                Spray Foam Science exists to provide an independent, technically accurate resource in a field often clouded by manufacturer bias or impenetrable jargon. We bridge the gap between complex chemistry and real-world application, backed by the veteran expertise of Contractors Choice Agency.
+            </p>
 </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Editorial Standards Section -->
-<section class="bg-[#EFE4D4] py-24 px-8 border-y border-[#EFE4D4]">
+</header>
+<!-- (2) Editorial Standards (White/Sand Band) -->
+<section class="w-full bg-[#F5F2ED] py-24 px-6">
 <div class="max-w-7xl mx-auto">
-<div class="text-center mb-16 space-y-4">
-<h2 class="font-headline text-4xl font-bold text-[#2E2419]">Editorial Standards</h2>
-<p class="font-body text-lg text-[#2E2419] max-w-2xl mx-auto opacity-90">Our commitment to objective, fact-based building science.</p>
+<div class="text-center mb-16">
+<h2 class="font-headline font-bold text-4xl text-[#A6672E] mb-4">Our Editorial Manifesto</h2>
+<div class="w-24 h-1 bg-[#A6672E] mx-auto"></div>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
 <!-- Column 1 -->
-<div class="bg-[#FAF7F1] p-8 rounded-xl border border-[#EFE4D4] transition-transform duration-300 hover:-translate-y-2">
-<div class="w-14 h-14 bg-[#A85A2E] bg-opacity-10 rounded-full flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-[#A85A2E] text-2xl" style="font-variation-settings: 'FILL' 1;">fact_check</span>
+<div class="bg-white p-10 rounded-lg shadow-sm border border-[#E5E1DA]">
+<div class="w-12 h-12 rounded-full bg-[#F5F2ED] flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[#A6672E] text-2xl">verified</span>
 </div>
-<h3 class="font-headline text-xl font-bold text-[#2E2419] mb-4">Technical Accuracy First</h3>
-<p class="font-body text-[#2E2419] opacity-80 leading-relaxed">
-                            Every article, diagram, and guide is rigorously reviewed for technical merit. We rely on established building-science physics and chemistry, never marketing hyperbole.
-                        </p>
+<h3 class="font-headline font-bold text-2xl text-[#1A1816] mb-4">Root-Cause Integrity</h3>
+<p class="font-body text-lg text-[#5C554E] leading-relaxed">
+                        Claims trace to verified physics, not marketing sheets. We demand empirical evidence and structural logic behind every assertion regarding material performance.
+                    </p>
 </div>
 <!-- Column 2 -->
-<div class="bg-[#FAF7F1] p-8 rounded-xl border border-[#EFE4D4] transition-transform duration-300 hover:-translate-y-2">
-<div class="w-14 h-14 bg-[#64784A] bg-opacity-10 rounded-full flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-[#64784A] text-2xl" style="font-variation-settings: 'FILL' 1;">balance</span>
+<div class="bg-white p-10 rounded-lg shadow-sm border border-[#E5E1DA]">
+<div class="w-12 h-12 rounded-full bg-[#F5F2ED] flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[#A6672E] text-2xl">science</span>
 </div>
-<h3 class="font-headline text-xl font-bold text-[#2E2419] mb-4">Independent of Manufacturers</h3>
-<p class="font-body text-[#2E2419] opacity-80 leading-relaxed">
-                            We maintain strict neutrality. Our educational materials evaluate the science behind the products, not the brands, ensuring an unbiased perspective on thermal performance.
-                        </p>
-</div>
-<!-- Column 3 -->
-<div class="bg-[#FAF7F1] p-8 rounded-xl border border-[#EFE4D4] transition-transform duration-300 hover:-translate-y-2">
-<div class="w-14 h-14 bg-[#C79A4B] bg-opacity-10 rounded-full flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-[#C79A4B] text-2xl" style="font-variation-settings: 'FILL' 1;">engineering</span>
-</div>
-<h3 class="font-headline text-xl font-bold text-[#2E2419] mb-4">Real Contractor Experience</h3>
-<p class="font-body text-[#2E2419] opacity-80 leading-relaxed">
-                            Theory meets practice. Our content is informed by decades of hands-on field experience, addressing the actual challenges installers face on the job site.
-                        </p>
-</div>
-</div>
-</div>
-</section>
-<!-- Credibility Section -->
-<section class="bg-[#5C3620] py-24 px-8 relative overflow-hidden">
-<!-- Decorative structural lines -->
-<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: linear-gradient(#C79A4B 1px, transparent 1px), linear-gradient(90deg, #C79A4B 1px, transparent 1px); background-size: 40px 40px;"></div>
-<div class="max-w-4xl mx-auto text-center relative z-10">
-<span class="material-symbols-outlined text-[#C79A4B] text-5xl mb-6" style="font-variation-settings: 'FILL' 1;">verified</span>
-<h2 class="font-headline text-3xl md:text-5xl font-bold text-[#FAF7F1] leading-tight mb-8">
-                    Backed by Contractors Choice Agency’s 20+ years of former contractor experience.
-                </h2>
-<div class="w-24 h-1 bg-[#A85A2E] mx-auto"></div>
-</div>
-</section>
-<!-- Core Science Categories -->
-<section class="bg-[#FAF7F1] py-24 px-8">
-<div class="max-w-7xl mx-auto">
-<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
-<div>
-<h2 class="font-headline text-4xl font-bold text-[#2E2419] mb-4">Core Science Categories</h2>
-<p class="font-body text-lg text-[#2E2419] opacity-80 max-w-xl">
-                            Explore our comprehensive curriculum covering the fundamental principles of spray polyurethane foam application and performance.
-                        </p>
-</div>
-<a class="inline-flex items-center space-x-2 text-[#A85A2E] font-label font-semibold hover:text-[#8C6239] transition-colors group" href="#">
-<span>View Full Index</span>
-<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</a>
-</div>
-<!-- Bento Grid Layout -->
-<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-<!-- Large Feature Card -->
-<div class="md:col-span-2 md:row-span-2 relative rounded-xl overflow-hidden group">
-<div class="absolute inset-0 bg-cover bg-center w-full h-full transition-transform duration-700 group-hover:scale-105" data-alt="A highly detailed cross-section architectural illustration of a wall assembly showing spray foam insulation, structural studs, and vapor barriers. Clean, technical blueprint style with warm earth tones, off-white background, and precise annotations. High-end building science aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD6u7V-0u9Egc16QLy2Z5fqacBHtAp2rrDNMBFIEccK1nDUmpXkniDjNsXd2tqyCUvCEkX-3MSnZVkOxjvwf7joPhScm0tXOzBtzqjAkB_vpMkF_Ree3kanjFZcJHsH3e4m6MVggUb9KOjXax1ts1vzCkYWeKhP4Atx8-MSxIPDxWg1l3K8ndxGb5_mu2Qj-KIIOBShy2vsUkmsOTfheXFaT182cpklEAQpIWNOyzpgJ0P5Pd08dK8p2Wuocz0DeAgRJBNDHaLalDrc')"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-[#2E2419] via-[#2E2419]/60 to-transparent opacity-90"></div>
-<div class="relative h-full min-h-[400px] flex flex-col justify-end p-8">
-<span class="inline-block px-3 py-1 bg-[#A85A2E] text-[#FAF7F1] font-label text-xs uppercase tracking-wider rounded mb-4 w-fit">Foundation</span>
-<h3 class="font-headline text-3xl font-bold text-[#FAF7F1] mb-2">Polyurethane Chemistry</h3>
-<p class="font-body text-[#EFE4D4] max-w-md">The molecular science behind A-side and B-side reactions, exothermic heat generation, and cellular structure formation.</p>
-</div>
-</div>
-<!-- Category Card 2 -->
-<div class="bg-[#EFE4D4] rounded-xl p-6 border border-[#EFE4D4] flex flex-col justify-between group hover:bg-[#FAF7F1] transition-colors duration-300 hover:shadow-md cursor-pointer">
-<div class="mb-8">
-<span class="material-symbols-outlined text-[#A85A2E] text-3xl mb-4">thermostat</span>
-<h3 class="font-headline text-xl font-bold text-[#2E2419]">Thermal Performance <br/><span class="text-base font-normal opacity-70">(R-Value)</span></h3>
-</div>
-<div class="flex justify-end">
-<span class="material-symbols-outlined text-[#8C6239] opacity-0 group-hover:opacity-100 transition-opacity">arrow_outward</span>
-</div>
-</div>
-<!-- Category Card 3 -->
-<div class="bg-[#EFE4D4] rounded-xl p-6 border border-[#EFE4D4] flex flex-col justify-between group hover:bg-[#FAF7F1] transition-colors duration-300 hover:shadow-md cursor-pointer">
-<div class="mb-8">
-<span class="material-symbols-outlined text-[#64784A] text-3xl mb-4">water_drop</span>
-<h3 class="font-headline text-xl font-bold text-[#2E2419]">Vapor Drive &amp; <br/>Permeability</h3>
-</div>
-<div class="flex justify-end">
-<span class="material-symbols-outlined text-[#8C6239] opacity-0 group-hover:opacity-100 transition-opacity">arrow_outward</span>
-</div>
-</div>
-<!-- Category Card 4 -->
-<div class="md:col-span-2 bg-[#EFE4D4] rounded-xl p-8 border border-[#EFE4D4] flex flex-col md:flex-row items-center gap-8 group hover:bg-[#FAF7F1] transition-colors duration-300 cursor-pointer">
-<div class="w-16 h-16 bg-[#5C3620] rounded-full flex items-center justify-center flex-shrink-0">
-<span class="material-symbols-outlined text-[#C79A4B] text-3xl">dew_point</span>
-</div>
-<div class="flex-grow text-center md:text-left">
-<h3 class="font-headline text-xl font-bold text-[#2E2419] mb-2">Moisture Management</h3>
-<p class="font-body text-[#2E2419] opacity-80 text-sm">Controlling bulk water and condensation within wall assemblies to prevent rot and mold.</p>
-</div>
-<div class="hidden md:block">
-<span class="material-symbols-outlined text-[#8C6239] opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
-</div>
-</div>
-<!-- Category Card 5 & 6 (Stacked in remaining space) -->
-<div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
-<div class="bg-white rounded-xl p-6 border border-[#EFE4D4] shadow-sm flex flex-col justify-between group hover:border-[#A85A2E] transition-colors duration-300 cursor-pointer">
-<div>
-<span class="material-symbols-outlined text-[#A85A2E] text-3xl mb-3">local_fire_department</span>
-<h3 class="font-headline text-lg font-bold text-[#2E2419]">Fire &amp; Code Compliance</h3>
-</div>
-</div>
-<div class="bg-white rounded-xl p-6 border border-[#EFE4D4] shadow-sm flex flex-col justify-between group hover:border-[#A85A2E] transition-colors duration-300 cursor-pointer">
-<div>
-<span class="material-symbols-outlined text-[#64784A] text-3xl mb-3">construction</span>
-<h3 class="font-headline text-lg font-bold text-[#2E2419]">Installation Protocols</h3>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- CTA Band -->
-<section class="bg-[#EFE4D4] py-16 px-8 border-t border-[#8C6239]/20">
-<div class="max-w-5xl mx-auto bg-[#FAF7F1] rounded-2xl p-8 md:p-12 shadow-sm border border-white flex flex-col md:flex-row items-center justify-between gap-8">
-<div class="text-center md:text-left max-w-2xl">
-<h2 class="font-headline text-3xl font-bold text-[#2E2419] mb-4">Ready for professional application?</h2>
-<p class="font-body text-[#2E2419] opacity-80 text-lg">
-                        Find a certified insured installer through Contractors Choice Agency to ensure your project meets the highest technical standards.
+<h3 class="font-headline font-bold text-2xl text-[#1A1816] mb-4">Objective Analysis</h3>
+<p class="font-body text-lg text-[#5C554E] leading-relaxed">
+                        Failure modes are examined through engineering, not fear. We dissect off-ratio mixing and substrate failures to educate, avoiding sensationalism.
                     </p>
 </div>
-<div class="flex flex-col sm:flex-row items-center gap-4 flex-shrink-0">
-<a class="flex items-center space-x-2 text-[#5C3620] font-headline font-bold text-xl hover:text-[#A85A2E] transition-colors" href="tel:18007772936">
-<span class="material-symbols-outlined">call</span>
-<span>1-800-SPRAY-FOAM</span>
-</a>
-<button class="bg-[#A85A2E] hover:bg-[#8C6239] text-[#FAF7F1] font-label font-semibold px-8 py-3 rounded-lg transition-colors duration-300 shadow-md">
-                        Find an Installer
-                    </button>
+<!-- Column 3 -->
+<div class="bg-white p-10 rounded-lg shadow-sm border border-[#E5E1DA]">
+<div class="w-12 h-12 rounded-full bg-[#F5F2ED] flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-[#A6672E] text-2xl">gavel</span>
+</div>
+<h3 class="font-headline font-bold text-2xl text-[#1A1816] mb-4">Unbiased Sovereignty</h3>
+<p class="font-body text-lg text-[#5C554E] leading-relaxed">
+                        No manufacturer favoritism; our allegiance is strictly to the science of the building envelope and the advancement of durable construction practices.
+                    </p>
+</div>
 </div>
 </div>
 </section>
-</main>
-<!-- Footer -->
-<footer class="bg-[#5C3620] dark:bg-[#2E2419] w-full mt-auto bg-[#5C3620] flat border-t-0 z-10 transition-opacity duration-200">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-8 py-12 max-w-7xl mx-auto">
-<!-- Brand & Copyright -->
-<div class="flex flex-col items-start space-y-4">
-<span class="font-headline text-xl text-[#C79A4B] font-bold">Spray Foam Science</span>
-<p class="font-body text-sm text-[#FAF7F1] opacity-80">
-                    © 2024 Spray Foam Science by Contractors Choice Agency. All rights reserved.
+<!-- (3) CCA Credentials (Dark Bronze-Black Strip) -->
+<section class="w-full bg-[#1A1816] py-24 px-6 text-white border-y border-[#2D2A26]">
+<div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+<div class="md:w-1/2 space-y-6">
+<h2 class="font-headline font-bold text-4xl text-[#D4A373]">Two Decades of Field-Level Expertise</h2>
+<div class="w-16 h-1 bg-[#D4A373]"></div>
+<p class="font-body text-xl text-white/80 leading-relaxed">
+                    Backed by Contractors Choice Agency (CCA), our insights are forged from twenty-plus years of contractor-side technical experience. We don't just study foam in isolated lab environments; we understand the mechanical reality of the install, the variables of site conditions, and the rigorous demands of code compliance.
                 </p>
 </div>
-<!-- Links -->
-<div class="flex flex-wrap md:justify-end gap-x-6 gap-y-4">
-<a class="font-label text-sm uppercase tracking-wider text-[#FAF7F1] opacity-80 hover:opacity-100 hover:text-[#C79A4B] transition-colors duration-200" href="#">About Us</a>
-<a class="font-label text-sm uppercase tracking-wider text-[#FAF7F1] opacity-80 hover:opacity-100 hover:text-[#C79A4B] transition-colors duration-200" href="#">Contact</a>
-<a class="font-label text-sm uppercase tracking-wider text-[#FAF7F1] opacity-80 hover:opacity-100 hover:text-[#C79A4B] transition-colors duration-200" href="#">Editorial Standards</a>
-<a class="font-label text-sm uppercase tracking-wider text-[#FAF7F1] opacity-80 hover:opacity-100 hover:text-[#C79A4B] transition-colors duration-200" href="#">Privacy Policy</a>
-<a class="font-label text-sm uppercase tracking-wider text-[#FAF7F1] opacity-80 hover:opacity-100 hover:text-[#C79A4B] transition-colors duration-200" href="#">Terms of Service</a>
+<div class="md:w-1/2 w-full h-80 rounded-lg overflow-hidden border border-[#2D2A26]">
+<div class="w-full h-full bg-cover bg-center" data-alt="A close-up, highly detailed photograph of cured closed-cell spray foam insulation adhering to a wooden structural beam. The lighting is dramatic and directional, highlighting the rigid, textured cellular structure of the foam against the wood grain. The color palette features deep ambers, shadows, and natural wood tones, emphasizing physical reality over abstract theory." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAP60ZbLwjcbfU-6Pw0-gAY_aWd_TFCTTdlQQV8Yi7aI7rgO-bsXZh5eiYmUK0uJBdi0RbOSryYxWJtYVZ_1n4sCQpo_T5AjwOJ_IRaZedZ8dfx46z9cudoFVMcnIa1DTWFzI6ossSw94OnkPVn062lvRQShQDFJs3b6QTND4Xl3NoeZfVhoNIJwB2xnPdlMTo1TG1BzvRiTEgcm05VpU7BG04u0T8qUG8qPC8HYKY8UqaOgZVOXXrM1gJl_fYi_qf5LStlqMRL7l8N')">
 </div>
+</div>
+</div>
+</section>
+<!-- (4) The Connection (Cream/Tan Band) -->
+<section class="w-full bg-[#FDFCFB] py-24 px-6">
+<div class="max-w-4xl mx-auto text-center">
+<span class="material-symbols-outlined text-5xl text-[#A6672E] mb-6">architecture</span>
+<h2 class="font-headline font-bold text-4xl text-[#1A1816] mb-6">Transitioning from Theory to Field</h2>
+<p class="font-body text-xl text-[#5C554E] leading-relaxed mb-10">
+                While our mission is strictly editorial, we recognize that building science only succeeds when properly applied in the real world. For readers seeking to translate this structural and thermodynamic knowledge into high-performance structures, we provide soft-framed access to CCA’s network of vetted, insured installers—ensuring the physics meets the professional.
+            </p>
+<a class="inline-flex items-center gap-2 px-8 py-3 border-2 border-[#A6672E] text-[#A6672E] font-headline font-bold tracking-wide rounded hover:bg-[#A6672E] hover:text-white transition-colors duration-300" href="#">
+                Explore the CCA Network <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- (5) Professional Footer -->
+<footer class="bg-[#1A1816] w-full py-12 px-8 flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto border-t border-[#2D2A26]">
+<div class="flex flex-col items-center md:items-start mb-6 md:mb-0">
+<span class="font-headline font-bold text-[#D4A373] text-xl mb-2">Spray Foam Science</span>
+<p class="font-body text-sm leading-relaxed text-[#A8A29E] max-w-md text-center md:text-left">
+                © 2024 Contractors Choice Agency. All rights reserved. Spray Foam Science is a technical resource hub.
+            </p>
+</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="font-body text-sm text-[#A8A29E] hover:text-white transition-colors" href="#">Ethics Policy</a>
+<a class="font-body text-sm text-[#A8A29E] hover:text-white transition-colors" href="#">Editorial Standards</a>
+<a class="font-body text-sm text-[#A8A29E] hover:text-white transition-colors" href="#">Privacy</a>
+<a class="font-body text-sm text-[#A8A29E] hover:text-white transition-colors" href="#">CCA Network</a>
 </div>
 </footer>
 </body></html>
