@@ -1,40 +1,32 @@
-# Conversion Patterns — sprayfoamscience.com (education hub, soft funnel)
+# Conversion Patterns — sprayfoamscience.com
 
-## Funnel model
-This is NOT a lead-gen contractor site and NOT insurance content. It's a credibility-first
-education hub that earns trust through technical accuracy, then offers a soft, optional path to
-CCA's broader network. Never a hard sell, never gated content, never a pop-up.
+This is an editorial/authority hub, not a lead-gen sales site. Conversion patterns here are
+deliberately soft — the opposite emphasis from the other CCA trade/coaching builds in this batch.
 
-## Primary CTA
-"Find a Vetted Installer Near You" / "Get a Free Quote from a Certified Installer" — placed at the
-end of every pillar/topic page and blog post, plus a dedicated funnel page. Framed as "since
-installation quality is the #1 factor in outcomes (see Pillar 2), here's how to find someone who
-does it correctly" — directly connected to the content's own argument, not a bolted-on ad.
+## Primary "conversion" is content engagement, not a form
+- Primary CTAs throughout: "Read the next topic," "See the full guide," internal links between
+  pillar pages and supporting blog posts. This is how an authority site earns trust and repeat
+  traffic — depth and internal linking, not a hard sales push on every scroll.
 
-## Secondary CTA
-General contact form for press/technical inquiries — low-pressure, not a lead form.
+## Secondary, soft CTA: find a vetted installer
+- "Find a CCA-network insured installer" appears as a secondary, lower-visual-weight element —
+  a sidebar card on pillar pages, a footer link, and one dedicated (short) contact page — never
+  the dominant visual element of a page.
+- The framing is earned by the content itself: the site's core argument across pillars 3, 4, and 6
+  is that installation quality (ratio control, substrate prep, correct assembly design) is what
+  actually separates a good spray foam job from a "red flag" one. A vetted-installer referral is
+  therefore a natural extension of the content's own argument, not a bolted-on pitch.
 
-## Trust signals (real, not fabricated)
-- Citation-backed technical claims (standard SPFA/ICC-consistent building science, R-value ranges,
-  cure chemistry) — accuracy IS the trust signal on an education site, more than testimonials.
-- "Backed by Contractors Choice Agency — 20+ years of former-contractor experience" as the
-  editorial-credibility line, consistent with other CCA sites, without insurance-specific framing.
-- No fabricated author bios, no invented credentials, no fake citations to studies that don't exist.
-- No star ratings, no named customer testimonials (this is a content site, not a service — there
-  is no service to rate).
+## Trust signals for this site type
+- Citations to real, verifiable building-science mechanics (two-component chemistry, R-value
+  ranges, code-barrier requirements) — never fabricated statistics or invented named studies.
+- No star ratings, no fabricated testimonials — the trust signal here is technical accuracy and a
+  sober, non-alarmist tone toward failure modes, not social proof.
+- "Backed by Contractors Choice Agency" as a credibility marker (real, 20+ year contractor-side
+  organization) rather than a fictitious standalone "institute" or "lab" brand.
 
-## Content format that converts in this niche (from competitor/reference analysis)
-- Long-form, multi-section technical pages with real comparison tables (open-cell vs. closed-cell
-  R-value, cost, vapor permeability) — the format both manufacturer and trade-association
-  references use successfully.
-- Honest "downsides" sections build more trust than an all-upside pitch — directly addresses the
-  "red flag" search cluster instead of avoiding it, which is the differentiation move.
-- FAQ sections targeting the exact PAA questions searchers are asking (see faq-research.md) —
-  answered honestly, including when the honest answer is nuanced ("it depends on the assembly").
-
-## What NOT to do
-- No insurance-specific CTAs or language anywhere (wrong classification for a non-"insurance"
-  domain).
-- No scare-tactic framing of the "red flag" content — present it as "here's what actually causes
-  it and how to avoid it," not "spray foam is dangerous."
-- No pop-ups, no exit-intent modals, no gated PDFs behind an email wall.
+## What NOT to do (explicitly, per hard rules + this site's own credibility)
+- No scare-tactic headlines on the reputation/failure-mode content — frame as sober diagnostic
+  ("why installation quality determines the outcome"), never "spray foam is dangerous" clickbait.
+- No hard "Get a Quote" forms competing with the reading experience.
+- No manufacturer-style R-value cherry-picking — presented ranges, not favorable single numbers.
