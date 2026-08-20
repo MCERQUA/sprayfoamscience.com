@@ -51,7 +51,6 @@ const orgSchema = {
   description:
     "Technical and educational resource on the building science of spray foam insulation — chemistry, thermal performance, moisture physics, and code compliance — backed by Contractors Choice Agency.",
   url: site.url,
-  telephone: site.phoneDigits,
   email: site.email,
   address: {
     "@type": "PostalAddress",

@@ -20,7 +20,7 @@ const steps = [
 export default function FindAnInstallerPage() {
   return (
     <main>
-      <Navbar businessName={site.businessName} phone={site.phone} />
+      <Navbar businessName={site.businessName} />
 
       <section className="pt-36 pb-10 md:pt-44 bg-muted/40">
         <div className="max-w-4xl mx-auto px-4 md:px-6 text-center">

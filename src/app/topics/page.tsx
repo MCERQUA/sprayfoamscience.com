@@ -28,7 +28,7 @@ const topicImages: Record<string, string> = {
 export default function TopicsIndexPage() {
   return (
     <main>
-      <Navbar businessName={site.businessName} phone={site.phone} />
+      <Navbar businessName={site.businessName} />
 
       <section className="pt-36 pb-16 md:pt-44 md:pb-20 bg-muted/40">
         <div className="max-w-4xl mx-auto px-4 md:px-6 text-center">

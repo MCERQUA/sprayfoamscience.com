@@ -36,7 +36,7 @@ export default async function TopicDetailPage({ params }: { params: Promise<{ sl
 
   return (
     <main>
-      <Navbar businessName={site.businessName} phone={site.phone} />
+      <Navbar businessName={site.businessName} />
 
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">

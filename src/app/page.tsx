@@ -46,7 +46,7 @@ const homeFAQs = [
 export default function HomePage() {
   return (
     <main>
-      <Navbar businessName={site.businessName} phone={site.phone} />
+      <Navbar businessName={site.businessName} />
 
       <Hero
         title="The Building Science Behind Spray Foam Insulation"

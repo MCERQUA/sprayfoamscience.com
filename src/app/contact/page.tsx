@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <main>
-      <Navbar businessName={site.businessName} phone={site.phone} />
+      <Navbar businessName={site.businessName} />
       <section className="pt-36 pb-8 md:pt-44">
         <div className="max-w-4xl mx-auto px-4 md:px-6 text-center">
           <FadeIn>
